@@ -1,4 +1,4 @@
-# Googleg エンジニアリング・プラクティス ドキュメント
+# Google エンジニアリング・プラクティス ドキュメント
 
 > このページは、[Google Engineering Practices Documentation](https://google.github.io/eng-practices/) の非公式な日本語翻訳です。元のドキュメントは、[クリエイティブ・コモンズの「CC-By 3.0」ライセンス](https://creativecommons.org/licenses/by/3.0/deed.ja)で公開されています。
 
