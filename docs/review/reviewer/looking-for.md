@@ -1,4 +1,4 @@
-# What to look for in a code review
+# コードレビューで何を期待するべきか
 
 
 

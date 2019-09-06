@@ -1,4 +1,4 @@
-# How to write code review comments
+# コードレビューのコメントの書き方
 
 
 

@@ -1,4 +1,4 @@
-# Speed of Code Reviews
+# コードレビューのスピード
 
 
 

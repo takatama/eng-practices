@@ -1,4 +1,4 @@
-# The Standard of Code Review
+# コードレビューの基準
 
 
 
