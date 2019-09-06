@@ -1,33 +1,24 @@
 # Google Engineering Practices Documentation
 
-Google has many generalized engineering practices that cover all languages and
-all projects. These documents represent our collective experience of various
-best practices that we have developed over time. It is possible that open source
-projects or other organizations would benefit from this knowledge, so we work to
-make it available publicly when possible.
+> このページは、[Google Engineering Practices Documentation | eng-practices](https://google.github.io/eng-practices/) の非公式な日本語翻訳です。元のドキュメントは、[クリエイティブ・コモンズの「CC-By 3.0」ライセンス](https://creativecommons.org/licenses/by/3.0/deed.ja)で公開されています。
 
-Currently this contains the following documents:
+Google はこれまで、あらゆる言語とあらゆるプロジェクトにおけるたくさんのエンジニアリング・プラクティスを一般化してきました。このドキュメントは、私たちが長年に渡って開発してきたさまざまなベストプラクティスの経験を反映しています。オープンソース・プロジェクトやその他の組織は、この知識から恩恵を受けられるかもしれません。私たちは可能な場合にはこの知識がパブリックに利用できるように、作業を進めています。
 
-*   [Google's Code Review Guidelines](review/index.md), which are actually two
-    separate sets of documents:
-    *   [The Code Reviewer's Guide](review/reviewer/index.md)
-    *   [The Change Author's Guide](review/developer/index.md)
+現在、以下のドキュメントが利用可能です。
 
-## Terminology
+*   [Google コードレビューガイドライン (Google's Code Review Guidelines)](review/index.md)。このガイドラインは2つのガイドラインからなります。
+    *   [コードレビュアのためのガイド (The Code Reviewer's Guide)](review/reviewer/index.md)
+    *   [変更の作者のためのガイド (The Change Author's Guide)](review/developer/index.md)
 
-There is some Google-internal terminology used in some of these documents, which
-we clarify here for external readers:
+## 用語
 
-*   **CL**: Stands for "changelist," which means one self-contained change that
-    has been submitted to version control or which is undergoing code review.
-    Other organizations often call this a "change" or a "patch."
-*   **LGTM**: Means "Looks Good to Me." It is what a code reviewer says when
-    approving a CL.
+このドキュメントでは、Google 内部で使用されている用語の一部が使われています。外部の読者のためにここで意味を明確にしておきます。
 
-## License
+*   **CL**: "changelist" の略で、現在のコードレビューの対象となっている、バージョン管理システムに提出された自己完結するひとまとまりの変更を意味する。他の組織では、よく CL のことを "change" や "patch" と呼ぶ。
+*   **LGTM**: "Looks Good to Me" の略。コードレビュアが CL を承認する時に言う言葉。
 
-The documents in this project are licensed under the CC-By 3.0 License, which
-encourages you to share these documents. See
-https://creativecommons.org/licenses/by/3.0/ for more details.
+## ライセンス
+
+このプロジェクトのドキュメントには、CC-By 3.0 ライセンスが適用されます。私たちはあなたにこのドキュメントをシェアすることをおすすめします。詳しくは、<https://creativecommons.org/licenses/by/3.0/deed.ja> を読んでください。
 
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
