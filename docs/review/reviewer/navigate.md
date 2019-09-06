@@ -76,4 +76,4 @@ the code review tool presents them to you. Sometimes it's also helpful to read t
 first before you read the main code, because then you have an idea of what the
 change is supposed to be doing.
 
-Next: [Speed of Code Reviews](speed.md)
+Next: [コードレビューのスピード](speed.md)

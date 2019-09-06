@@ -139,4 +139,4 @@ relaxed. However, please see [What Is An Emergency?](../emergencies.md#what) for
 a description of which situations actually qualify as emergencies and which
 don't.
 
-Next: [How to Write Code Review Comments](comments.md)
+Next: [コードレビューのコメントの書き方](comments.md)

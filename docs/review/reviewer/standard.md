@@ -109,4 +109,4 @@ for a decision from a maintainer of the code, or asking an Eng Manager to help
 out. **Don't let a CL sit around because the author and the reviewer can't come
 to an agreement.**
 
-Next: [What to look for in a code review](looking-for.md)
+Next: [コードレビューで何を期待するべきか](looking-for.md)

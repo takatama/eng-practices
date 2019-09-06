@@ -201,4 +201,4 @@ Make sure to review **every line** of code you've been asked to review, look at
 the **context**, make sure you're **improving code health**, and compliment
 developers on **good things** that they do.
 
-Next: [Navigating a CL in Review](navigate.md)
+Next: [レビューで CL をナビゲートする](navigate.md)
