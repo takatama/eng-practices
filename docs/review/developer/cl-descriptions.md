@@ -1,69 +1,43 @@
-# Writing good CL descriptions
+# よい CL の説明を書く
 
+CL の説明 (description) とは、**何を (what)** 変更したのか、それが **なぜ (why)** 変更されたのかについてのパブリックな記録です。Google のバージョン管理の歴史の永続的な一部となるものであり、何年にも渡って、あなたのレビュア以外にも数百人の人たちに読まれる可能性があるものです。
 
+将来の開発者は、あなたの説明に基づいて CL を検索することになります。たとえば、将来誰かが、手元に詳細な情報がない状態で、かすかな記憶を頼りにあなたの CL を探すことになるかもしれません。もし重要な情報のすべてがコードの中にしか存在せず、説明の中に書かれていなければ、あなたの CL を発見するのは極めて困難なものとなってしまいます。
 
-A CL description is a public record of **what** change is being made and **why**
-it was made. It will become a permanent part of our version control history, and
-will possibly be read by hundreds of people other than your reviewers over the
-years.
+## 1行目 {#firstline}
 
-Future developers will search for your CL based on its description. Someone in
-the future might be looking for your change because of a faint memory of its
-relevance but without the specifics handy. If all the important information is
-in the code and not the description, it's going to be a lot harder for them to
-locate your CL.
+*   行われたことについての短い要約。
+*   命令形で書かれた完全な文。
+*   空行を続ける。
 
-## First Line {#firstline}
+CL の説明の**1行目**は、「その CL によって具体的に**何が**なされたのか」についての短い要約でなければなりません。その後ろには1行の空行を続けます。将来のコードの検索者のほとんどは、コードのバージョン管理のヒストリーを閲覧しているときにこれを目にすることになります。そのため、この1行目は、CL や説明の全文を読まなくても、あなたの CL が実際に何を「行った」のかを理解できるほど十分な情報を含んでおり、参考になるものでなければなりません。
 
-*   Short summary of what is being done.
-*   Complete sentence, written as though it was an order.
-*   Follow by empty line.
+伝統的に、CL の説明の1行目は、命令形で書かれた完全な文として書きます。たとえば、\"**Deleting** the FizzBuzz RPC and **replacing** it with the new system." ではなく、\"**Delete** the FizzBuzz RPC and **replace** it with the new system." と言います。(「FizBuzz RPC を削除し、新しいシステムで置換する。」) しかし、説明の残りの部分は命令形で書く必要はありません。
 
-The **first line** of a CL description should be a short summary of
-*specifically* **what** *is being done by the CL*, followed by a blank line.
-This is what most future code searchers will see when they are browsing the
-version control history of a piece of code, so this first line should be
-informative enough that they don't have to read your CL or its whole description
-just to get a general idea of what your CL actually *did*.
+## 本文は informative である {#informative}
 
-By tradition, the first line of a CL description is a complete sentence, written
-as though it were an order (an imperative sentence). For example, say
-\"**Delete** the FizzBuzz RPC and **replace** it with the new system." instead
-of \"**Deleting** the FizzBuzz RPC and **replacing** it with the new system."
-You don't have to write the rest of the description as an imperative sentence,
-though.
+説明の残りの部分は、十分な情報を含んでおり参考になる (informative) ものでなければなりません。解決した問題の簡単な説明や、なぜそれが最適なアプローチであるかの説明になるかもしれません。もしそのアプローチに欠点があれば、その欠点に言及しなければなりません。関連することであれば、バグ番号やベンチマークの結果、設計ドキュメントへのリンクなどのバックグラウンドの情報も含めます。
 
-## Body is Informative {#informative}
+たとえ小さな CL であっても、詳細について注意を向けることには価値があります。CL をコンテキストの中に置いてください。
 
-The rest of the description should be informative. It might include a brief
-description of the problem that's being solved, and why this is the best
-approach. If there are any shortcomings to the approach, they should be
-mentioned. If relevant, include background information such as bug numbers,
-benchmark results, and links to design documents.
+## 悪い CL の説明 {#bad}
 
-Even small CLs deserve a little attention to detail. Put the CL in context.
+"Fix bug" というのは、不適切な CL の説明です。どんなバクなのでしょうか？ そのバグを修正するためにどんなことをしたのでしょうか？ その他の悪い説明としては、次のようなものがあります。
 
-## Bad CL Descriptions {#bad}
+-   "Fix build." (ビルドを修正する。)
+-   "Add patch." (パッチを追加する。)
+-   "Moving code from A to B." (コードを A から B に移動する。)
+-   "Phase 1." (フェーズ1。)
+-   "Add convenience functions." (便利な関数を追加する。)
+-   "kill weird URLs." (おかしな URL を削除する。)
 
-"Fix bug" is an inadequate CL description. What bug? What did you do to fix it?
-Other similarly bad descriptions include:
+これらの一部は実際にあった CL の説明です。CL の作者は役に立つ情報を提供していると信じていたのかもしれませんが、CL の説明の目的を果たせていません。
 
--   "Fix build."
--   "Add patch."
--   "Moving code from A to B."
--   "Phase 1."
--   "Add convenience functions."
--   "kill weird URLs."
+## よい CL の説明 {#good}
 
-Some of those are real CL descriptions. Their authors may believe they are
-providing useful information, but they are not serving the purpose of a CL
-description.
+以下によい説明の一例を挙げます。
 
-## Good CL Descriptions {#good}
-
-Here are some examples of good descriptions.
-
-### Functionality change
+### 機能の変更
 
 > rpc: remove size limit on RPC server message freelist.
 >
@@ -72,11 +46,9 @@ Here are some examples of good descriptions.
 > slowly over time, so that idle servers eventually release all freelist
 > entries.
 
-The first few words describe what the CL actually does. The rest of the
-description talks about the problem being solved, why this is a good solution,
-and a bit more information about the specific implementation.
+最初の文は、この CL が実際に何を行ったのかを説明しています。説明の残りの部分では、解決した問題、なぜこれが良い解決方法であるのか、そして、特定の実装に関してさらに詳しい情報が書かれています。
 
-### Refactoring
+### リファクタリング
 
 > Construct a Task with a TimeKeeper to use its TimeStr and Now methods.
 >
@@ -91,12 +63,14 @@ and a bit more information about the specific implementation.
 >
 > Continuing the long-range goal of refactoring the Borglet Hierarchy.
 
+最初の文は、CL が何を行い、過去のコードからどのように変更されたかを説明しています。説明の残りの部分では、この CL のコンテキストで、特定の実装について解決策が理想的ではないこと、そして将来の可能な方向性について書かれています。また、この変更が**なぜ**なされたのかも説明しています。
+
 The first line describes what the CL does and how this is a change from the
 past. The rest of the description talks about the specific implementation, the
 context of the CL, that the solution isn't ideal, and possible future direction.
 It also explains *why* this change is being made.
 
-### Small CL that needs some context
+### コンテキストが必要な小さな CL
 
 > Create a Python3 build rule for status.py.
 >
@@ -106,14 +80,10 @@ It also explains *why* this change is being made.
 > instead of Python2, and significantly simplifies some automated build file
 > refactoring tools being worked on currently.
 
-The first sentence describes what's actually being done. The rest of the
-description explains *why* the change is being made and gives the reviewer a lot
-of context.
+最初の文は、実際に行われたことを説明しています。説明の残りの部分では、**なぜ**その変更が行われたかを説明し、レビュアに多くのコンテキストを提供しています。
 
-## Review the description before submitting the CL
+## CL を送信する前に説明を見直す
 
-CLs can undergo significant change during review. It can be worthwhile to review
-a CL description before submitting the CL, to ensure that the description still
-reflects what the CL does.
+CL は、レビュー中に大幅に変更される可能性があります。CL を送信する前には、現在でも説明が実際に CL が行っていることを正しく反映しているか、CL の説明を見直す価値があります。
 
-Next: [Small CLs](small-cls.md)
+Next: [小さな CL](small-cls.md)
