@@ -4,6 +4,6 @@
 
 -   [よい CL の説明を書く](cl-descriptions.md)
 -   [小さな CL](small-cls.md)
--   [レビューコメントの扱い方](handling-comments.md)
+-   [レビュアのコメントの扱い方](handling-comments.md)
 
 [コードレビューの方法](../reviewer/)も読んでみてください。コードレビュアのための詳しいガイドが説明されています。
