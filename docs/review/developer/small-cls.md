@@ -1,8 +1,8 @@
-# Small CLs
+# 小さな CL
 
 
 
-## Why Write Small CLs? {#why}
+## なぜ小さな CLを書くのか？ {#why}
 
 Small, simple CLs are:
 
@@ -39,7 +39,7 @@ changes. It can be a lot of work to split up a change after you've already
 written it, or require lots of time arguing about why the reviewer should accept
 your large change. It's easier to just write small CLs in the first place.
 
-## What is Small? {#what_is_small}
+## 小さいとはどのくらいか？ {#what_is_small}
 
 In general, the right size for a CL is **one self-contained change**. This means
 that:
@@ -71,7 +71,7 @@ seems like an acceptably-sized CL to you might be overwhelming to your reviewer.
 When in doubt, write CLs that are smaller than you think you need to write.
 Reviewers rarely complain about getting CLs that are too small.
 
-## When are Large CLs Okay? {#large_okay}
+## 大きな CL はどのようなときに認められるのか？ {#large_okay}
 
 There are a few situations in which large changes aren't as bad:
 
@@ -83,7 +83,7 @@ There are a few situations in which large changes aren't as bad:
     although some of the caveats from above (such as merging and testing) still
     apply.
 
-### Splitting by Files {#splitting-files}
+### ファイルを分割する {#splitting-files}
 
 Another way to split up a CL is by groupings of files that will require
 different reviewers but are otherwise self-contained changes.
@@ -99,7 +99,7 @@ configuration or experiment that uses that code; this is easier to roll back
 too, if necessary, as configuration/experiment files are sometimes pushed to
 production faster than code changes.
 
-## Separate Out Refactorings {#refactoring}
+## リファクタリングを分離する {#refactoring}
 
 It's usually best to do refactorings in a separate CL from feature changes or
 bug fixes. For example, moving and renaming a class should be in a different CL
@@ -111,7 +111,7 @@ feature change or bug fix CL, though. It's up to the judgment of developers and
 reviewers to decide when a refactoring is so large that it will make the review
 more difficult if included in your current CL.
 
-## Keep related test code in the same CL {#test_code}
+## 関連するテストコードを同じ CL の中に含める {#test_code}
 
 Avoid splitting test code into a separate CL. Tests validating your code
 modifications should go into the same CL, even if it increases the code line
@@ -124,7 +124,7 @@ similar to the [refactorings guidelines](#refactoring). That includes:
 *   refactoring the test code (e.g. introduce helper functions).
 *   introducing larger test framework code (e.g. an integration test).
 
-## Don't Break the Build {#break}
+## ビルドを壊さない {#break}
 
 If you have several CLs that depend on each other, you need to find a way to
 make sure the whole system keeps working after each CL is submitted. Otherwise
@@ -132,7 +132,7 @@ you might break the build for all your fellow developers for a few minutes
 between your CL submissions (or even longer if something goes wrong unexpectedly
 with your later CL submissions).
 
-## Can't Make it Small Enough {#cant}
+## 十分小さくできない {#cant}
 
 Sometimes you will encounter situations where it seems like your CL *has* to be
 large. This is very rarely true. Authors who practice writing small CLs can
@@ -150,4 +150,4 @@ what is coming. In this situation, expect to be going through the review process
 for a long time, be vigilant about not introducing bugs, and be extra diligent
 about writing tests.
 
-Next: [How to Handle Reviewer Comments](handling-comments.md)
+Next: [レビュアのコメントの扱い方](handling-comments.md)
