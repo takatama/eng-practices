@@ -1,6 +1,6 @@
 # Google Engineering Practices Documentation
 
-> このページは、[Google Engineering Practices Documentation | eng-practices](https://google.github.io/eng-practices/) の非公式な日本語翻訳です。元のドキュメントは、[クリエイティブ・コモンズの「CC-By 3.0」ライセンス](https://creativecommons.org/licenses/by/3.0/deed.ja)で公開されています。
+> このページは、[Google Engineering Practices Documentation](https://google.github.io/eng-practices/) の非公式な日本語翻訳です。元のドキュメントは、[クリエイティブ・コモンズの「CC-By 3.0」ライセンス](https://creativecommons.org/licenses/by/3.0/deed.ja)で公開されています。
 
 Google はこれまで、あらゆる言語とあらゆるプロジェクトにおけるたくさんのエンジニアリング・プラクティスを一般化してきました。このドキュメントは、私たちが長年に渡って開発してきたさまざまなベストプラクティスの経験を反映しています。オープンソース・プロジェクトやその他の組織は、この知識から恩恵を受けられるかもしれません。私たちは可能な場合にはこの知識がパブリックに利用できるように、作業を進めています。
 
