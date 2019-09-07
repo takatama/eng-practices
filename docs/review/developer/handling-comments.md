@@ -2,37 +2,17 @@
 
 
 
-When you've sent a CL out for review, it's likely that your reviewer will
-respond with several comments on your CL. Here are some useful things to know
-about handling reviewer comments.
+レビューのために CL を提出すると、レビュアはあなたの CL にいくつかのコメントを返してくれることがあります。このページでは、レビュアのコメントを扱うときに知っておくと役に立つことを紹介します。
 
 ## 個人的なものとして捉えない {#personal}
 
-The goal of review is to maintain the quality of our codebase and our products.
-When a reviewer provides a critique of your code, think of it as their attempt
-to help you, the codebase, and Google, rather than as a personal attack on you
-or your abilities.
+レビューの目的は、Google のコードベースとプロダクトの品質を維持することです。レビュアがあなたが書いたコードに批判的なコメントを加えるのは、あなた自身やあなたの能力に対して個人的な攻撃をしているからではなく、あなたとコードベースと Google を助けようとしているからだと考えてください。
 
-Sometimes reviewers feel frustrated and they express that frustration in their
-comments. This isn't a good practice for reviewers, but as a developer you
-should be prepared for this. Ask yourself, "What is the constructive thing that
-the reviewer is trying to communicate to me?" and then operate as though that's
-what they actually said.
+時には、レビュアが苛立ちを感じてそのいらだちをコメントに表すこともあるかもしれません。それはレビュアにとってよいプラクティスではありませんが、開発者として、あなたはそのようなことがあるという心構えを持たなければなりません。そのようなときには、「レビュアは私に、どんな建設的なことを伝えようとしているのだろう？」と、自分自身に問いかけてみてください。そして、レビュアがその建設的な意見を実際に自分に言ったものとして振る舞ってください。
 
-**Never respond in anger to code review comments.** That is a serious breach of
-professional etiquette that will live forever in the code review tool. If you
-are too angry or annoyed to respond kindly, then walk away from your computer
-for a while, or work on something else until you feel calm enough to reply
-politely.
+**コードレビューのコメントに怒りを込めて返事をすることは、絶対にあってはなりません。**万が一そのようなことをしたとすれば、それは、コードレビューツール上に永遠に記録され続ける、プロフェッショナルとしての重大なエチケット違反です。もしあなたが怒ったりイライラして親切に返事をすることができないのなら、丁寧に返事ができるくらい冷静になるまで、しばらくあなたのコンピュータから離れて散歩をしたり、何か他の仕事をしましょう。
 
-In general, if a reviewer isn't providing feedback in a way that's constructive
-and polite, explain this to them in person. If you can't talk to them in person
-or on a video call, then send them a private email. Explain to them in a kind
-way what you don't like and what you'd like them to do differently. If they also
-respond in a non-constructive way to this private discussion, or it doesn't have
-the intended effect, then
-escalate to your manager as
-appropriate.
+一般に、もしレビュアが建設的で丁寧なやり方でフィードバックを提供しないのであれば、直接相手に会ってそのことを説明してください。もし直接またはビデオ会話で相手と話せない場合には、その時は個人的なメールを送ってください。あなたが嫌なことは何なのか、そして、どんな違ったことをレビュアにしてほしいのかを、優しく丁寧に説明してください。もし相手がこの個人的なディスカッションでも非建設的な返事をしたり、意図した結果が得られないならば、そのときは、あなたのマネージャに適切に解決を依頼します。
 
 ## コードを修正する {#code}
 
