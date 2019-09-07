@@ -39,19 +39,11 @@
 
 ### ファイルを分割する {#splitting-files}
 
-Another way to split up a CL is by groupings of files that will require
-different reviewers but are otherwise self-contained changes.
+CL を分割するもう一つの方法は、自己完結した一連の変更を、別々のレビュアを必要とするファイルごとにグループ化することです。
 
-For example: you send off one CL for modifications to a protocol buffer and
-another CL for changes to the code that uses that proto. You have to submit the
-proto CL before the code CL, but they can both be reviewed simultaneously. If
-you do this, you might want to inform both sets of reviewers about the other CL
-that you wrote, so that they have context for your changes.
+一例としては、1つの CL でプロトコル・バッファの修正を行い、別の CL でその proto を使用するコードの変更を行うようにします。proto の変更の CL は、それを使用するコードの CL よりも先に送信しなければなりませんが、2つの CL を両方同時にレビューすることができるようになります。このように分割した場合、両方のレビュアたちにあなたが書いた他の CL の存在について知らせることで、レビュアたちがあなたの変更のコンテキストを知ることができるようにするといいでしょう。 
 
-Another example: you send one CL for a code change and another for the
-configuration or experiment that uses that code; this is easier to roll back
-too, if necessary, as configuration/experiment files are sometimes pushed to
-production faster than code changes.
+別の例としては、1つの CL でコードの変更を行い、別の CL でそのコードを使用する設定や検証を行うようにします。こうすることで、必要があったときにより簡単にロールバックできるようになります。設定や検証のためのファイルは、コードの変更よりも素早く本番環境に投入できるからです。
 
 ## リファクタリングを分離する {#refactoring}
 
