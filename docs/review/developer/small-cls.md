@@ -47,15 +47,9 @@ CL を分割するもう一つの方法は、自己完結した一連の変更�
 
 ## リファクタリングを分離する {#refactoring}
 
-It's usually best to do refactorings in a separate CL from feature changes or
-bug fixes. For example, moving and renaming a class should be in a different CL
-from fixing a bug in that class. It is much easier for reviewers to understand
-the changes introduced by each CL when they are separate.
+通常、リファクタリングは、機能の変更やバグフィックスとは独立した CL で行うのが最善です。たとえば、クラスの移動や名前の変更は、そのクラス内のバグの修正とは別の CL で行うべきです。CL が分かれていれば、レビュアは各 CL で行われた変更をずっと簡単に理解できるようになります。
 
-Small cleanups such as fixing a local variable name can be included inside of a
-feature change or bug fix CL, though. It's up to the judgment of developers and
-reviewers to decide when a refactoring is so large that it will make the review
-more difficult if included in your current CL.
+ローカル変数名の変更のような小さなクリーンアップであれば、機能の変更やバグフィックスの CL に含めることができる場合もあります。リファクタリングが大きくなって現在の CL に含めた場合にレビューが難しくなるのはいつなのか、その判断は、開発者とレビュアに委ねられています。
 
 ## 関連するテストコードを同じ CL の中に含める {#test_code}
 
