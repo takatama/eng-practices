@@ -16,16 +16,9 @@
 
 ## コードを修正する {#code}
 
-If a reviewer says that they don't understand something in your code, your first
-response should be to clarify the code itself. If the code can't be clarified,
-add a code comment that explains why the code is there. If a comment seems
-pointless, only then should your response be an explanation in the code review
-tool.
+レビュアにあなたのコードで理解できないところがあると言われた場合、あなたの最初の返事は、コード自体をより明確にするものでなければなりません。もしコードが明確にできない場合、コードがそこにある理由を説明するコードコメントを追加してください。もしコメント無意味なものに思われるなら、その場合にのみコードレビューツール上の返事で説明を行うべきです。
 
-If a reviewer didn't understand some piece of your code, it's likely other
-future readers of the code won't understand either. Writing a response in the
-code review tool doesn't help future code readers, but clarifying your code or
-adding code comments does help them.
+レビュアがあなたのコードの一部を理解できなかった場合、将来コードを読んだ他の人も理解できない可能性があります。コードレビューツール上で返事を書いても将来コードを読む人の助けにはなりませんが、あなたが書いたコードを明確にしたり、コードコメントを追加すれば、彼らを助けることができます。
 
 ## よく考える {#think}
 
