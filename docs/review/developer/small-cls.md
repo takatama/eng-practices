@@ -4,40 +4,18 @@
 
 ## なぜ小さな CLを書くのか？ {#why}
 
-Small, simple CLs are:
+小さく、シンプルな CL とは、次のような CL のことです。
 
--   **Reviewed more quickly.** It's easier for a reviewer to find five minutes
-    several times to review small CLs than to set aside a 30 minute block to
-    review one large CL.
--   **Reviewed more thoroughly.** With large changes, reviewers and authors tend
-    to get frustrated by large volumes of detailed commentary shifting back and
-    forth—sometimes to the point where important points get missed or dropped.
--   **Less likely to introduce bugs.** Since you're making fewer changes, it's
-    easier for you and your reviewer to reason effectively about the impact of
-    the CL and see if a bug has been introduced.
--   **Less wasted work if they are rejected.** If you write a huge CL and then
-    your reviewer says that the overall direction is wrong, you've wasted a lot
-    of work.
--   **Easier to merge.** Working on a large CL takes a long time, so you will
-    have lots of conflicts when you merge, and you will have to merge
-    frequently.
--   **Easier to design well.** It's a lot easier to polish the design and code
-    health of a small change than it is to refine all the details of a large
-    change.
--   **Less blocking on reviews.** Sending self-contained portions of your
-    overall change allows you to continue coding while you wait for your current
-    CL in review.
--   **Simpler to roll back.** A large CL will more likely touch files that get
-    updated between the initial CL submission and a rollback CL, complicating
-    the rollback (the intermediate CLs will probably need to be rolled back
-    too).
+-   **より早くレビューされる。**レビュアが1つの大きな CL をレビューするためにスケジュールに30分のブロックを確保するよりも、5分間でできる小さな CL をレビューを5、6回行う時間を見つける方が簡単です。
+-   **より完全にレビューされる。**大きな変更があると、何度も前後に移動しながら分量の多い詳細なコメンタリを行う必要があってストレスがかかる傾向があり、重要な点が見逃されたり抜け落ちてしまう可能性が増します。
+-   **バグが入りにくくなる。**より少ない変更しか加えていないため、あなたもレビュアも CL の影響を効果的に考えやすくなり、バグが入り込んでいないか確認しやすくなります。
+-   **リジェクトされた場合でも、作業の無駄が少なくて済む。**もし巨大な CL を書いて、その後レビュアがそもそも全体的な方向性が違っていると指摘した場合、あなたはたくさんの作業を無駄にしてしまいます。
+-   **よりマージがしやすい。**巨大な CL は作業に長い時間がかかります。そのため、マージするときにたくさんのコンフリクトが生じてしまい、頻繁にマージしなければならなくなります。
+-   **より簡単によい設計が行える。**小さいコードの設計やコードの健全性を洗練させるのは、大きな変更を隅々まで洗練させるよりもずっと簡単です。
+-   **レビュアのブロッキングを短くできる。**変更全体のうち、自己完結した一部分を送信するようにすれば、現在の CL がレビューされるのを待っている間に、続きのコーディングができるようになります。
+-   **ロールバックがよりシンプルになる。**大きな CL は最初の CL 提出時から CL をロールバックするまでの間に更新された複数のファイルを触る可能性が高くなり、ロールバックが複雑になってしまいます (おそらく中間の CL も同時にロールバックしなければならなくなります)。
 
-Note that **reviewers have discretion to reject your change outright for the
-sole reason of it being too large.** Usually they will thank you for your
-contribution but request that you somehow make it into a series of smaller
-changes. It can be a lot of work to split up a change after you've already
-written it, or require lots of time arguing about why the reviewer should accept
-your large change. It's easier to just write small CLs in the first place.
+**レビュアには、ただ CL が大きすぎるというだけの理由で無条件にリジェクトする決定権がある**ということを覚えておいてください。普通は、レビュアはあなたのコントリビューションに感謝し、どうにかして小さな一連の変更に分けられないかとお願いすることになるでしょう。あなたがすでに変更を書き終えた後に分割を行うのにはたくさんの仕事が必要になるかもしれませんし、大きな変更を受け入れるべき理由について議論するのに長い時間が掛かってしまうかもしれません。初めの段階で単に小さい CL を書いた方が簡単です。
 
 ## 小さいとはどのくらいか？ {#what_is_small}
 
