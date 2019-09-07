@@ -19,35 +19,16 @@
 
 ## 小さいとはどのくらいか？ {#what_is_small}
 
-In general, the right size for a CL is **one self-contained change**. This means
-that:
+一般に、1つの CL の適切なサイズとは、**1つの自己完結した変更**のことです。つまり、次のような変更のことを指します。
 
--   The CL makes a minimal change that addresses **just one thing**. This is
-    usually just one part of a feature, rather than a whole feature at once. In
-    general it's better to err on the side of writing CLs that are too small vs.
-    CLs that are too large. Work with your reviewer to find out what an
-    acceptable size is.
--   Everything the reviewer needs to understand about the CL (except future
-    development) is in the CL, the CL's description, the existing codebase, or a
-    CL they've already reviewed.
--   The system will continue to work well for its users and for the developers
-    after the CL is checked in.
--   The CL is not so small that its implications are difficult to understand. If
-    you add a new API, you should include a usage of the API in the same CL so
-    that reviewers can better understand how the API will be used. This also
-    prevents checking in unused APIs.
+-   その CL は、**ただ1つのこと**だけを扱う最小の変更を行っていること。これは通常、ある機能の全体を一度に変更するのではなく、ある機能の1つの部分だけ変更するということです。一般に、小さすぎる CL を書く間違いと、大きすぎる CL を書く間違いの両方を経験した方がいいです。あなたのレビュアと協力して、受け入れられるサイズを見つけましょう。
+-   レビュアがその CL について理解する必要がある全ての情報 (将来の開発については除く) は、CL、CL の説明、既存のコードベース、すでにレビュー済みの CL の中に含めること。
+-   その CL をチェックインした後でも、ユーザーにとっても開発者にとってもシステムが適切に動作し続けること。
+-   その CL が行おうとしていることを理解するのが難しくなるほど小さすぎないこと。もし新しい API を1つ追加する場合、レビュアが API の使われ方をよりよく理解できるように、同じ CL の中に API の使用方法も含めるべきです。これにより、使われない API をチェックインするのを防ぐことにもなります。
 
-There are no hard and fast rules about how large is "too large." 100 lines is
-usually a reasonable size for a CL, and 1000 lines is usually too large, but
-it's up to the judgment of your reviewer. The number of files that a change is
-spread across also affects its "size." A 200-line change in one file might be
-okay, but spread across 50 files it would usually be too large.
+どのくらいの大きさが「大きすぎるか」についての厳格なルールはありません。通常、1つの CL に対して 100 行のコードというのは妥当で、1000 行というのは大きすぎますが、最終的にはあなたのレビュアの判断に委ねられます。1 ファイルに対する 200 行の変更は問題ないかもしれませんが、200 行が 50 ファイルに渡って分散している場合は、通常は大きすぎます。
 
-Keep in mind that although you have been intimately involved with your code from
-the moment you started to write it, the reviewer often has no context. What
-seems like an acceptably-sized CL to you might be overwhelming to your reviewer.
-When in doubt, write CLs that are smaller than you think you need to write.
-Reviewers rarely complain about getting CLs that are too small.
+あなたはコードを書き始めた瞬間からそのコードに親しく関わっていても、レビュアにはそのコンテキストが分からないことがよくある、ということを心に留めておきましょう。あなたには受け入れ可能なサイズの CL だと思われても、レビュアには混乱を与えてしまうかもしれません。迷った場合には、自分が書く必要があると思うよりも小さい CL を書くようにしましょう。レビュアが CL が小さすぎると文句を言うことはまれです。
 
 ## 大きな CL はどのようなときに認められるのか？ {#large_okay}
 
