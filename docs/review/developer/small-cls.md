@@ -53,24 +53,17 @@ CL を分割するもう一つの方法は、自己完結した一連の変更�
 
 ## 関連するテストコードを同じ CL の中に含める {#test_code}
 
-Avoid splitting test code into a separate CL. Tests validating your code
-modifications should go into the same CL, even if it increases the code line
-count.
+テストコードを別の CL に分離するのは避けてください。あなたのコードの変更を検証するテストは、たとえコードの行数が長くなってしまうとしても、同じ CL に含めなければなりません。
 
-However, <i>independent</i> test modifications can go into separate CLs first,
-similar to the [refactorings guidelines](#refactoring). That includes:
+しかし、**独立した**テストの修正は、最初に1つの CL として分離することができます。これは、[リファクタリングのガイドライン](#refactoring)に似ています。CL の分離は、次のような手順で行います。
 
-*   validating pre-existing, submitted code with new tests.
-*   refactoring the test code (e.g. introduce helper functions).
-*   introducing larger test framework code (e.g. an integration test).
+*   すでに存在している送信済みのコードを、新しいテストで検証する。
+*   テストコードをリファクタリングする (たとえば、ヘルパー関数を導入します)。
+*   より大きなテストフレームワークのコードを導入する (たとえば、インテグレーションテストなど)。
 
 ## ビルドを壊さない {#break}
 
-If you have several CLs that depend on each other, you need to find a way to
-make sure the whole system keeps working after each CL is submitted. Otherwise
-you might break the build for all your fellow developers for a few minutes
-between your CL submissions (or even longer if something goes wrong unexpectedly
-with your later CL submissions).
+互いに依存する複数の CL がある場合、各 CL が提出された後でもシステム全体が確実に機能し続けるようにする方法を探す必要があります。そうしなければ、あなたが CL を提出中の数分間、仲間の開発者たち全員のビルドを壊してしまう可能性があります (あるいは、後で提出した CL が予期せず誤っていた場合、更に長い時間がかかってしまいます)。
 
 ## 十分小さくできない {#cant}
 
