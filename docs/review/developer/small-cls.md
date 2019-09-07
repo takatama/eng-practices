@@ -67,20 +67,10 @@ CL を分割するもう一つの方法は、自己完結した一連の変更�
 
 ## 十分小さくできない {#cant}
 
-Sometimes you will encounter situations where it seems like your CL *has* to be
-large. This is very rarely true. Authors who practice writing small CLs can
-almost always find a way to decompose functionality into a series of small
-changes.
+時には、CL を大きくする**しかない**と思われるような状況に出会うことがあるかもしれません。しかし、本当にそうするしかない場合は極めて稀です。小さな CL を書くことを実践している作者たちは、ほとんど必ず、機能を一連の小さな変更に分解する何らかの方法を見つけることができます。
 
-Before writing a large CL, consider whether preceding it with a refactoring-only
-CL could pave the way for a cleaner implementation. Talk to your teammates and
-see if anybody has thoughts on how to implement the functionality in small CLs
-instead.
+大きな CL を書く前に、先にリファクタリングのみの CL を書くことで、よりクリーンな実装への道が開けないかどうか、よく考えてみてください。チームメイトと話をして、その機能を代わりの小さな CL で実装する方法についてアイデアがある人を探してみてください。
 
-If all of these options fail (which should be extremely rare) then get consent
-from your reviewers in advance to review a large CL, so they are warned about
-what is coming. In this situation, expect to be going through the review process
-for a long time, be vigilant about not introducing bugs, and be extra diligent
-about writing tests.
+これらのすべての選択肢を行っても、本当にどうしても良い方法が見つからない場合には (そのような場合は本当に極めて稀であるはずです)、大きな CL をレビューすることについてあなたのレビュアたちからコンセンサスを得て、これから行うことをレビュアに警告するようにします。大きな CL のレビューでは、長い時間をかけてレビューのプロセスを完全に行い、バグが入り込まないように十分警戒し、入念に追加のテストを書くことが期待されます。
 
 Next: [レビュアのコメントの扱い方](handling-comments.md)
