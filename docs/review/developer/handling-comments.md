@@ -22,26 +22,11 @@
 
 ## よく考える {#think}
 
-Writing a CL can take a lot of work. It's often really satisfying to finally
-send one out for review, feel like it's done, and be pretty sure that no further
-work is needed. So when a reviewer comes back with comments on things that could
-be improved, it's easy to reflexively think the comments are wrong, the reviewer
-is blocking you unnecessarily, or they should just let you submit the CL.
-However, **no matter how certain you are** at this point, take a moment to step
-back and consider if the reviewer is providing valuable feedback that will help
-the codebase and Google. Your first question to yourself should always be, "Is
-the reviewer correct?"
+CL を書くためにはたくさんの作業が必要になります。レビューのために CL を送信したら、その CL は完了し、それ以上の作業はもう必要ないと確信して、十分満足してしまうことがよくあります。そのため、レビュアからもう少し改善できるかもしれないことがあるというコメントが付いた返事が返ってくると、反射的にコメントが間違っていると考えてしまったり、レビュアは自分を不必要に邪魔をしていると感じたり、レビュアは自分の CL をこのまま提出させるべきだと思ってしまったりしやすいものです。しかし、この点に関しては、**あなたがどれだけ強く確信を持っていたとしても**、少し立ち止まって一歩下がり、レビュアはコードベース全体と Google にとって価値のあるフィードバックを提供しているのではないか、とよく考えてみてください。あなたが常に最初に自分自身に問いかけるべき質問は、「レビュアーは正しいだろうか？」です。 
 
-If you can't answer that question, it's likely the reviewer needs to clarify
-their comments.
+もしその質問にあなたが答えられないならば、レビュアはコメントをもっと明確にする必要があります。
 
-If you *have* considered it and you still think you're right, feel free to
-respond with an explanation of why your method of doing things is better for the
-codebase, users, and/or Google. Often, reviewers are actually providing
-*suggestions* and they want you to think for yourself about what's best. You
-might actually know something about the users, codebase, or CL that the reviewer
-doesn't know. So fill them in; give them more context. Usually you can come to
-some consensus between yourself and the reviewer based on technical facts.
+もしあなたがその質問について**十分に考えた**上で、それでもあなたが正しいと考えるのであれば、問題を解決するためにあなたが選択した方法が、コードベースとユーザーと Google にとってよりよい方法である理由について説明するための返事を自由に書いてください。多くの場合、レビュアは実際には**提案**を行っているのであり、何が最善なのかをあなた自身に考えてほしいと思っています。あなたは実際に、ユーザー、コードベース、CL について、レビュアが知らないことを何かを知っているかもしれません。だから、その知識で溝を埋めて、レビュアにより多くのコンテキストを与えてください。普通は、あなたとレビュアの間で、技術的な事実に基づいた何らかの合意を得ることができます。
 
 ## 対立を解消する {#conflicts}
 
