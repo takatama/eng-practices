@@ -43,9 +43,6 @@ might actually know something about the users, codebase, or CL that the reviewer
 doesn't know. So fill them in; give them more context. Usually you can come to
 some consensus between yourself and the reviewer based on technical facts.
 
-## コンフリクトを解決する {#conflicts}
+## 対立を解消する {#conflicts}
 
-Your first step in resolving conflicts should always be to try to come to
-consensus with your reviewer. If you can't achieve consensus, see
-[The Standard of Code Review](../reviewer/standard.md), which gives principles
-to follow in such a situation.
+いつでも、対立を解消するためにあなたが最初に行うべきことは、レビュアと合意を得るように努めることです。もし合意が得られない場合には、[コードレビューの基準](../reviewer/standard.md)を読んでください。ここには、そのような状況で従うべき原則が書かれています。
