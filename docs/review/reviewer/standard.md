@@ -20,23 +20,11 @@
 
 この基準にはもちろん制限があります。たとえば、レビュアがシステムに望まない機能を追加する CL であれば、たとえコードがよく設計されていたとしても、レビュアは承認を拒否することができます。
 
-A key point here is that there is no such thing as "perfect" code&mdash;there is
-only _better_ code. Reviewers should not require the author to polish every tiny
-piece of a CL before granting approval. Rather, the reviewer should balance out
-the need to make forward progress compared to the importance of the changes they
-are suggesting. Instead of seeking perfection, what a reviewer should seek is
-_continuous improvement_. A CL that, as a whole, improves the maintainability,
-readability, and understandability of the system shouldn't be delayed for days
-or weeks because it isn't "perfect."
+ここでのキーポイントは、「完璧」なコードというものはどこにも存在せず、あるのは**よりよい**コードだけだということです。レビュアは、CL の作者に対して、承認前にコードのあらゆる細かい部分まで洗練させることを要求するべきではありません。むしろレビュアは、システムを前に進める必要性と作者が提出した変更の重要性とを比べて、バランスを取らなければなりません。レビュアが求めるべきなのは、完璧さではなく、**継続的な改善**です。CL が全体として、システムのメンテナンス性、リーダビリティ、理解のしやすさを改善するものであるならば、たとえそれが「完璧」なものではなくても、数日や数週間も提出を遅らせてはなりません。
 
-Reviewers should _always_ feel free to leave comments expressing that something
-could be better, but if it's not very important, prefix it with something like
-"Nit: " to let the author know that it's just a point of polish that they could
-choose to ignore.
+レビュアには**常に**、もっと改善できるはずだと思う点についてコメントする自由がなければなりません。しかしそれほど重要な点ではないのなら、コメントの最初に "Nit: " (訳注: 些細な点という意味、ニッチの単数形) のようなキーワードを付けて、作者に改善可能な点だが改善するか否かは作者に委ねる、ということを知らせてあげましょう。
 
-Note: Nothing in this document justifies checking in CLs that definitely
-_worsen_ the overall code health of the system. The only time you would do that
-would be in an [emergency](../emergencies.md).
+注意: このドキュメントは、システム全体のコードの健全性を具体的に**悪化させる**ような CL をチェックインすることを正当化するものでは決してありません。そのような CL は、[緊急事態](../emergencies.md)の時以外には許されません。
 
 ## メンタリング
 
