@@ -171,7 +171,7 @@ health of the system.** Most systems become complex through many small changes
 that add up, so it's important to prevent even small complexities in new
 changes.
 
-## 良いこと {#good_things}
+## よいこと {#good_things}
 
 If you see something nice in the CL, tell the developer, especially when they
 addressed one of your comments in a great way. Code reviews often just focus on
@@ -181,24 +181,21 @@ tell a developer what they did right than to tell them what they did wrong.
 
 ## まとめ
 
-In doing a code review, you should make sure that:
+コードレビュー中には、以下のことを保証しなければなりません。
 
--   The code is well-designed.
--   The functionality is good for the users of the code.
--   Any UI changes are sensible and look good.
--   Any parallel programming is done safely.
--   The code isn't more complex than it needs to be.
--   The developer isn't implementing things they *might* need in the future but
-    don't know they need now.
--   Code has appropriate unit tests.
--   Tests are well-designed.
--   The developer used clear names for everything.
--   Comments are clear and useful, and mostly explain *why* instead of *what*.
--   Code is appropriately documented (generally in g3doc).
--   The code conforms to our style guides.
+-   コードがよく設計されている。
+-   機能がコードの利用者にとってもよいものとなっている。
+-   すべての UI の変更は、意味があってよいものに見える。
+-   並列プログラミングでは、すべての処理を安全に完了させている。
+-   コードが必要以上に複雑ではない。
+-   開発者が、現時点で必要かどうかは分からないが、将来必要になる**かもしれない**ものを実装していない。
+-   コードに適切なユニットテストが存在する。
+-   テストがよく設計されている。
+-   開発者がすべてのものに明確な名前を使用している。
+-   コメントが明確で役に立つものであり、大部分は**コードの動作 (what)** ではなく**そのコードである理由 (why)** を説明するものとなっている。
+-   コードに適切なドキュメントが書かれている (一般には g3doc で)。
+-   コードが Google のスタイルガイドに従っている。
 
-Make sure to review **every line** of code you've been asked to review, look at
-the **context**, make sure you're **improving code health**, and compliment
-developers on **good things** that they do.
+レビュアは、レビューを依頼されたコードの**すべての行**をレビューし、**コンテキスト**をしっかり捉えて、**コードの健全性が改善されている**ことを確認し、そして、開発者が行った**よいこと**を褒めてください。
 
 Next: [レビューで CL をナビゲートする](navigate.md)
