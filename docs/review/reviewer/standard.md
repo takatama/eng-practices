@@ -32,25 +32,13 @@
 
 ## 原則 {#principles}
 
-*   Technical facts and data overrule opinions and personal preferences.
+*   技術的な事実やデータは、意見や個人的な好みに優先されます。
 
-*   On matters of style, the [style guide](http://google.github.io/styleguide/)
-    is the absolute authority. Any purely style point (whitespace, etc.) that is
-    not in the style guide is a matter of personal preference. The style should
-    be consistent with what is there. If there is no previous style, accept the
-    author's.
+*   スタイルの問題については、[スタイルガイド](http://google.github.io/styleguide/)が絶対的な権威です。純粋なスタイルに関する事柄 (ホワイトスペースなど) がスタイルガイドの中に定義されていない場合には、個人の好みの問題です。ただし、スタイルがどのようなものであっても、一貫性がなければなりません。もし過去にスタイルが存在しなければ、CL の作者のスタイルを受け入れてください。
 
-*   **Aspects of software design are almost never a pure style issue or just a
-    personal preference.** They are based on underlying principles and should be
-    weighed on those principles, not simply by personal opinion. Sometimes there
-    are a few valid options. If the author can demonstrate (either through data
-    or based on solid engineering principles) that several approaches are
-    equally valid, then the reviewer should accept the preference of the author.
-    Otherwise the choice is dictated by standard principles of software design.
+*   **ソフトウェア設計のほとんどすべての側面は、純粋なスタイルの問題や個人的な好みであることは決してありません。**それらは根底にある原則に基づくものであり、単に個人の意見によるものではなく、根底にある原則を重視しなければなりません。ときには有効な選択肢がいくつか存在することもあります。もし CL の作者が (データを通してであれ、強固なエンジニアリングの原則に基づいてであれ) 複数のアプローチが同等に有効であることを提示ことができるのであれば、レビュアは作者の好みを受け入れるべきです。そうでなれば、選択はソフトウェア設計の標準的な原則によって決定されます。
 
-*   If no other rule applies, then the reviewer may ask the author to be
-    consistent with what is in the current codebase, as long as that doesn't
-    worsen the overall code health of the system.
+*   もし他のどのルールも適用できない場合は、システムのコード全体の健全性を悪化させない限り、レビュアは CL の作者に対して、現在のコードベースの中にあるものの一貫性を保つように求めることができます。
 
 ## 対立の解消 {#conflicts}
 
