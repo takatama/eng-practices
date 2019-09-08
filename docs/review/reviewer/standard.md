@@ -2,42 +2,23 @@
 
 
 
-The primary purpose of code review is to make sure that the overall
-code health of Google's code
-base is improving over time. All of the tools and processes of code review are
-designed to this end.
+コードレビューの主な目的は、Google のコードベースのコード全体の健全性が、時間の経過とともに改善されることを保証することです。コードレビューのツールとプロセスのすべては、この目的のために設計されています。
 
-In order to accomplish this, a series of trade-offs have to be balanced.
+この目的を達成するには、一連のトレードオフの間でバランスを取る必要があります。
 
-First, developers must be able to _make progress_ on their tasks. If you never
-submit an improvement to the codebase, then the codebase never improves. Also,
-if a reviewer makes it very difficult for _any_ change to go in, then developers
-are disincentivized to make improvements in the future.
+まずはじめに、開発者は自分たちのタスクを**前に進める**ことができなければなりません。もしあなたがコードベースに対する改善を全く提出しなければ、コードベースが改善することは決してありません。また、レビュアが**あらゆる変更**を加えるのを非常に難しくしてしまえば、開発者が将来改善を加えようとするインセンティブが失われてしまいます。
 
-On the other hand, it is the duty of the reviewer to make sure that each CL is
-of such a quality that the overall code health of their codebase is not
-decreasing as time goes on. This can be tricky, because often, codebases degrade
-through small decreases in code health over time, especially when a team is
-under significant time constraints and they feel that they have to take
-shortcuts in order to accomplish their goals.
+一方で、各 CL が、時間が経過してもコードベースのコード全体の健全性が低下しないような高い品質を備えていることを保証することも、レビュアの義務です。しかし、それはやっかいなことに思われるかもしれません。通常コードベースでは、特にチームが厳しい時間の成約にさらされていて、目標を達成するためにショートカットを使わなければならないと感じているような場合、時間の経過とともに小さな健全性の低下が重なり、コード全体の健全性も少しずつ低下してゆくものだからです。
 
-Also, a reviewer has ownership and responsibility over the code they are
-reviewing. They want to ensure that the codebase stays consistent, maintainable,
-and all of the other things mentioned in
-["What to look for in a code review."](looking-for.md)
+さらに、レビュアは、自分がレビューしたコード全体に対する所有権と責任を持ちます。レビュアは、コードベースが一貫性を持ち続け、メンテナンス性が維持され、[「コードレビューで何を期待するべきか」](looking-for.md)で言及されている他のすべての事柄についても保証しようとします。
 
-Thus, we get the following rule as the standard we expect in code reviews:
+したがって、私たちがコードレビュー中に期待する基準として、次のルールを定めます。
 
-**In general, reviewers should favor approving a CL once it is in a state where
-it definitely improves the overall
-code health of the system
-being worked on, even if the CL isn't perfect.**
+**一般に、ある CL が作業対象のシステムのコード全体の健全性を具体的に向上させる状態に一度でも達したならば、たとえその CL が完璧なものでなくても、レビュアは承認を賛成しなければならない。**
 
-That is _the_ senior principle among all of the code review guidelines.
+これは、すべてのコードレビューガイドラインの中で**最も**重要な原則です。
 
-There are limitations to this, of course. For example, if a CL adds a feature
-that the reviewer doesn't want in their system, then the reviewer can certainly
-deny approval even if the code is well-designed.
+この基準にはもちろん制限があります。たとえば、レビュアがシステムに望まない機能を追加する CL であれば、たとえコードがよく設計されていたとしても、レビュアは承認を拒否することができます。
 
 A key point here is that there is no such thing as "perfect" code&mdash;there is
 only _better_ code. Reviewers should not require the author to polish every tiny
