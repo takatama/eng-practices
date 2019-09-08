@@ -1,4 +1,4 @@
-# Emergencies
+# 緊急事態
 
 Sometimes there are emergency CLs that must pass through the entire code review
 process as quickly as
@@ -6,7 +6,7 @@ possible.
 
 
 
-## What Is An Emergency? {#what}
+## 緊急事態とはどのような時か？ {#what}
 
 An emergency CL would be a **small** change that: allows a major launch to
 continue instead of rolling back, fixes a bug significantly affecting users in
@@ -22,7 +22,7 @@ code reviews, when they come up.
 However, after the emergency is resolved you should look over the emergency CLs
 again and give them a [more thorough review](reviewer/looking-for.md).
 
-## What Is Not An Emergency? {#not}
+## 緊急事態でないのはどのような時か？ {#not}
 
 To be clear, the following cases are *not* an emergency:
 
@@ -40,7 +40,7 @@ To be clear, the following cases are *not* an emergency:
 
 And so on.
 
-## What Is a Hard Deadline? {#deadlines}
+## ハード・デッドラインとは何か？ {#deadlines}
 
 A hard deadline is one where **something disastrous would happen** if you miss
 it. For example:

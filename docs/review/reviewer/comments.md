@@ -2,7 +2,7 @@
 
 
 
-## Summary
+## まとめ
 
 -   Be kind.
 -   Explain your reasoning.
@@ -11,7 +11,7 @@
 -   Encourage developers to simplify code or add code comments instead of just
     explaining the complexity to you.
 
-## Courtesy
+## 礼儀
 
 In general, it is important to be
 courteous and respectful while also being
@@ -29,7 +29,7 @@ actual performance benefit that I can see. Because there's no performance
 benefit, it's best for this code to be single-threaded instead of using multiple
 threads."
 
-## Explain Why {#why}
+## なぜかという理由を説明する {#why}
 
 One thing you'll notice about the "good" example from above is that it helps the
 developer understand *why* you are making your comment. You don't always need to
@@ -37,7 +37,7 @@ include this information in your review comments, but sometimes it's appropriate
 to give a bit more explanation around your intent, the best practice you're
 following, or how your suggestion improves code health.
 
-## Giving Guidance {#guidance}
+## ガイダンスを与える {#guidance}
 
 **In general it is the developer's responsibility to fix a CL, not the
 reviewer's.** You are not required to do detailed design of a solution or write
@@ -55,7 +55,7 @@ helpful. The primary goal of code review is to get the best CL possible. A
 secondary goal is improving the skills of developers so that they require less
 and less review over time.
 
-## Accepting Explanations {#explanations}
+## 説明を受け入れる {#explanations}
 
 If you ask a developer to explain a piece of code that you don't understand,
 that should usually result in them **rewriting the code more clearly**.

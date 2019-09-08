@@ -6,7 +6,7 @@ Sometimes a developer will push back on a code review. Either they will disagree
 with your suggestion or they will complain that you are being too strict in
 general.
 
-## Who is right? {#who_is_right}
+## 誰が正しいのか？ {#who_is_right}
 
 When a developer disagrees with your suggestion, first take a moment to consider
 if they are correct. Often, they are closer to the code than you are, and so
@@ -28,18 +28,18 @@ Sometimes it takes a few rounds of explaining a suggestion before it really
 sinks in. Just make sure to always stay [polite](comments.md#courtesy) and let
 the developer know that you *hear* what they're saying, you just don't *agree*.
 
-## Upsetting Developers {#upsetting_developers}
+## 怒った開発者 {#upsetting_developers}
 
 Reviewers sometimes believe that the developer will be upset if the reviewer
 insists on an improvement. Sometimes developers do become upset, but it is
 usually brief and they become very thankful later that you helped them improve
-the quality of their code. Usually, if you are [polite](comments.md#courtesy) in
+the quality of their code. Usually, if you are [礼儀正しく](comments.md#courtesy) in
 your comments, developers actually don't become upset at all, and the worry is
 just in the reviewer's mind. Upsets are usually more about
-[the way comments are written](comments.md#courtesy) than about the reviewer's
+[コメントの書かれ方](comments.md#courtesy) than about the reviewer's
 insistence on code quality.
 
-## Cleaning It Up Later {#later}
+## 後できれいにする {#later}
 
 A common source of push back is that developers (understandably) want to get
 things done. They don't want to go through another round of review just to get
@@ -56,17 +56,17 @@ code is in the codebase and "done." Letting people "clean things up later" is a
 common way for codebases to degenerate.
 
 If a CL introduces new complexity, it must be cleaned up before submission
-unless it is an [emergency](../emergencies.md). If the CL exposes surrounding
+unless it is an [緊急事態](../emergencies.md). If the CL exposes surrounding
 problems and they can't be addressed right now, the developer should file a bug
 for the cleanup and assign it to themselves so that it doesn't get lost. They
 can optionally also write a TODO comment in the code that references the filed
 bug.
 
-## General Complaints About Strictness {#strictness}
+## 厳密さに関する一般的な不満 {#strictness}
 
 If you previously had fairly lax code reviews and you switch to having strict
 reviews, some developers will complain very loudly. Improving the
-[speed](speed.md) of your code reviews usually causes these complaints to fade
+[スピード](speed.md) of your code reviews usually causes these complaints to fade
 away.
 
 Sometimes it can take months for these complaints to fade away, but eventually
@@ -75,7 +75,7 @@ code they help generate. Sometimes the loudest protesters even become your
 strongest supporters once something happens that causes them to really see the
 value you're adding by being strict.
 
-## Resolving Conflicts {#conflicts}
+## 対立を解消する {#conflicts}
 
 If you are following all of the above but you still encounter a conflict between
 yourself and a developer that can't be resolved, see

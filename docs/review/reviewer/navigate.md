@@ -2,7 +2,7 @@
 
 
 
-## Summary
+## まとめ
 
 Now that you know [what to look for](looking-for.md), what's the most efficient
 way to manage a review that's spread across multiple files?
@@ -13,9 +13,9 @@ way to manage a review that's spread across multiple files?
     overall?
 3.  Look at the rest of the CL in an appropriate sequence.
 
-## Step One: Take a broad view of the change {#step_one}
+## ステップ1: 変更に対して広い視野を持つ {#step_one}
 
-Look at the [CL description](../developer/cl-descriptions.md) and what the CL
+Look at the [CL の説明](../developer/cl-descriptions.md) and what the CL
 does in general. Does this change even make sense? If this change shouldn't have
 happened in the first place, please respond immediately with an explanation of
 why the change should not be happening. When you reject a change like this, it's
@@ -37,7 +37,7 @@ process for external contributors so that there is more communication before CLs
 are written. It's better to tell people "no" before they've done a ton of work
 that now has to be thrown away or drastically re-written.
 
-## Step Two: Examine the main parts of the CL {#step_two}
+## ステップ2: CL のメインとなる部分を確認する {#step_two}
 
 Find the file or files that are the "main" part of this CL. Often, there is one
 file that has the largest number of logical changes, and it's the major piece of
@@ -66,7 +66,7 @@ comments out immediately:
     code in the codebase, the developer needs to start on any major re-work of
     the CL as soon as possible.
 
-## Step Three: Look through the rest of the CL in an appropriate sequence {#step_three}
+## ステップ3: CL の残りの部分が論理的な順序になっているか最後まで見る {#step_three}
 
 Once you've confirmed there are no major design problems with the CL as a whole,
 try to figure out a logical sequence to look through the files while also making

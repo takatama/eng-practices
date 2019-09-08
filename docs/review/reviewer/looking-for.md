@@ -6,14 +6,14 @@ Note: Always make sure to take into account
 [The Standard of Code Review](standard.md) when considering each of these
 points.
 
-## Design
+## 設計
 
 The most important thing to cover in a review is the overall design of the CL.
 Do the interactions of various pieces of code in the CL make sense? Does this
 change belong in your codebase, or in a library? Does it integrate well with the
 rest of your system? Is now a good time to add this functionality?
 
-## Functionality
+## 機能
 
 Does this CL do what the developer intended? Is what the developer intended good
 for the users of this code? The "users" are usually both end-users (when they
@@ -43,7 +43,7 @@ also a good reason not to use concurrency models where race conditions or
 deadlocks are possible—it can make it very complex to do code reviews or
 understand the code.)
 
-## Complexity
+## 複雑さ
 
 Is the CL more complex than it should be? Check this at every level of the
 CL—are individual lines too complex? Are functions too complex? Are classes too
@@ -60,7 +60,7 @@ need to be solved in the future. The future problem should be solved once it
 arrives and you can see its actual shape and requirements in the physical
 universe.
 
-## Tests
+## テスト
 
 Ask for unit, integration, or end-to-end
 tests as appropriate for the change. In general, tests should be added in the
@@ -79,13 +79,13 @@ different test methods?
 Remember that tests are also code that has to be maintained. Don't accept
 complexity in tests just because they aren't part of the main binary.
 
-## Naming
+## 命名
 
 Did the developer pick good names for everything? A good name is long enough to
 fully communicate what the item is or does, without being so long that it
 becomes hard to read.
 
-## Comments
+## コメント
 
 Did the developer write clear comments in understandable English? Are all of the
 comments actually necessary? Usually comments are useful when they **explain
@@ -104,9 +104,9 @@ Note that comments are different from *documentation* of classes, modules, or
 functions, which should instead express the purpose of a piece of code, how it
 should be used, and how it behaves when used.
 
-## Style
+## スタイル
 
-We have [style guides](http://google.github.io/styleguide/) at Google for all
+We have [スタイルガイド](http://google.github.io/styleguide/) at Google for all
 of our major languages, and even for most of the minor languages. Make sure the
 CL follows the appropriate style guides.
 
@@ -122,7 +122,7 @@ author wants to reformat the whole file, have them send you just the
 reformatting to as one CL, and then send another CL with their functional
 changes after that.
 
-## Documentation
+## ドキュメント
 
 If a CL changes how users build, test, interact with, or release code, check to
 see that it also updates associated documentation, including
@@ -132,7 +132,7 @@ documentation should also be deleted.
 If documentation is
 missing, ask for it.
 
-## Every Line {#every_line}
+## すべての行 {#every_line}
 
 Look at *every* line of code that you have been assigned to review. Some things
 like data files, generated code, or large data structures you can scan over
@@ -155,7 +155,7 @@ review, make sure there is a reviewer on the CL who is qualified, particularly
 for complex issues such as security, concurrency, accessibility,
 internationalization, etc.
 
-## Context
+## コンテキスト
 
 It is often helpful to look at the CL in a broad context. Usually the code
 review tool will only show you a few lines of code around the parts that are
@@ -171,7 +171,7 @@ health of the system.** Most systems become complex through many small changes
 that add up, so it's important to prevent even small complexities in new
 changes.
 
-## Good Things {#good_things}
+## 良いこと {#good_things}
 
 If you see something nice in the CL, tell the developer, especially when they
 addressed one of your comments in a great way. Code reviews often just focus on
@@ -179,7 +179,7 @@ mistakes, but they should offer encouragement and appreciation for good
 practices, as well. It’s sometimes even more valuable, in terms of mentoring, to
 tell a developer what they did right than to tell them what they did wrong.
 
-## Summary
+## まとめ
 
 In doing a code review, you should make sure that:
 

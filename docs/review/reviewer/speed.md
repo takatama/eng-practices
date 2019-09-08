@@ -2,7 +2,7 @@
 
 
 
-## Why Should Code Reviews Be Fast? {#why}
+## なぜコードレビューは早くなければならないのか？ {#why}
 
 **At Google, we optimize for the speed at which a team of developers can produce
 a product together**, as opposed to optimizing for the speed at which an
@@ -28,7 +28,7 @@ When code reviews are slow, several things happen:
     could be. Slow reviews also discourage code cleanups, refactorings, and
     further improvements to existing CLs.
 
-## How Fast Should Code Reviews Be? {#fast}
+## コードレビューはどのくらい早くあるべきか？ {#fast}
 
 If you are not in the middle of a focused task, **you should do a code review
 shortly after it comes in.**
@@ -39,7 +39,7 @@ review request (i.e. first thing the next morning).
 Following these guidelines means that a typical CL should get multiple rounds of
 review (if needed) within a single day.
 
-## Speed vs. Interruption {#interruption}
+## 速さ vs. 解釈 {#interruption}
 
 There is one time where the consideration of personal velocity trumps team
 velocity. **If you are in the middle of a focused task, such as writing code,
@@ -53,7 +53,7 @@ Instead, wait for a break point in your work before you respond to a request for
 review. This could be when your current coding task is completed, after lunch,
 returning from a meeting, coming back from the microkitchen, etc.
 
-## Fast Responses {#responses}
+## 素早い応答 {#responses}
 
 When we talk about the speed of code reviews, it is the _response_ time that we
 are concerned with, as opposed to how long it takes a CL to get through the
@@ -77,13 +77,13 @@ response at a reasonable break point in your work.)
 certain their "LGTM" means "this code meets [our standards](standard.md)."**
 However, individual responses should still ideally be [fast](#fast).
 
-## Cross-Time-Zone Reviews {#tz}
+## タイムゾーンを越えるレビュー {#tz}
 
 When dealing with time zone differences, try to get back to the author when they
 are still in the office. If they have already gone home, then try to make sure
 your review is done before they get back to the office the next day.
 
-## LGTM With Comments {#lgtm-with-comments}
+## コメント付き LGTM {#lgtm-with-comments}
 
 In order to speed up code reviews, there are certain situations in which a
 reviewer should give LGTM/Approval even though they are also leaving unresolved
@@ -101,7 +101,7 @@ LGTM With Comments is especially worth considering when the developer and
 reviewer are in different time zones and otherwise the developer would be
 waiting for a whole day just to get "LGTM, Approval."
 
-## Large CLs {#large}
+## 大きな CL {#large}
 
 If somebody sends you a code review that is so large you're not sure when you
 will be able to have time to review it, your typical response should be to ask
@@ -118,7 +118,7 @@ goals as a reviewer should be to always unblock the developer or enable them to
 take some sort of further action quickly, without sacrificing code health to do
 so.
 
-## Code Review Improvements Over Time {#time}
+## 時間の経過によるコードレビューの改善 {#time}
 
 If you follow these guidelines and you are strict with your code reviews, you
 should find that the entire code review process tends to go faster and faster
@@ -131,11 +131,11 @@ the [code review standards](standard.md) or quality for an imagined improvement
 in velocity**&mdash;it's not actually going to make anything happen more
 quickly, in the long run.
 
-## Emergencies
+## 緊急事態
 
-There are also [emergencies](../emergencies.md) where CLs must pass through the
+There are also [緊急事態](../emergencies.md) where CLs must pass through the
 _whole_ review process very quickly, and where the quality guidelines would be
-relaxed. However, please see [What Is An Emergency?](../emergencies.md#what) for
+relaxed. However, please see [緊急事態とはどのような時か？](../emergencies.md#what) for
 a description of which situations actually qualify as emergencies and which
 don't.
 
