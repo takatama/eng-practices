@@ -28,13 +28,7 @@
 
 ## メンタリング
 
-Code review can have an important function of teaching developers something new
-about a language, a framework, or general software design principles. It's
-always fine to leave comments that help a developer learn something new. Sharing
-knowledge is part of improving the code health of a system over time. Just keep
-in mind that if your comment is purely educational, but not critical to meeting
-the standards described in this document, prefix it with "Nit: " or otherwise
-indicate that it's not mandatory for the author to resolve it in this CL.
+コードレビューには、開発者にプログラミング言語やフレームワーク、ソフトウェア設計の一般的な原則について何か新しいことを教える、という重要な役目もあります。開発者が何か新しいことを学ぶのを助けるコメントを残すのは、常に良いことです。知識を共有することは、時間の経過とともにシステムのコードの健全性を改善することの一部でもあります。ただし、もしあなたのコメントが純粋に教育的なものであり、このドキュメントで説明している基準を満たすために必須なものではない場合には、そのコメントの最初に "Nit: " と書くか、作者には現在の CL の中で解決する義務があるわけではないと伝えることを忘れないようにしてください。
 
 ## 原則 {#principles}
 
