@@ -42,22 +42,10 @@
 
 ## 対立の解消 {#conflicts}
 
-In any conflict on a code review, the first step should always be for the
-developer and reviewer to try to come to consensus, based on the contents of
-this document and the other documents in [The CL Author's Guide](../developer/)
-and this [Reviewer Guide](index.md).
+コードレビュー上で対立が生まれた場合に常に最初にしなければならないのは、[CL の作者のためのガイド](../developer/)とこの[レビュアのためのガイド](index.md)中のドキュメントの内容に基づいて、開発者とレビュアの双方がコンセンサスを得ようと努めることです。
 
-When coming to consensus becomes especially difficult, it can help to have a
-face-to-face meeting or a VC between the reviewer and the author, instead of
-just trying to resolve the conflict through code review comments. (If you do
-this, though, make sure to record the results of the discussion in a comment on
-the CL, for future readers.)
+コンセンサスを得るのが特に難しくなった場合には、コードレビューのコメントだけで対立を解消しようとするよりも、レビュアと作者の間で対面のミーティングやビデオチャットをすると助けとなることがあります。(ただし、もしこれを行った場合、将来のコードベースの読者のために、CL のコメント中に議論の結果を忘れずに記録するようにしてください。)
 
-If that doesn't resolve the situation, the most common way to resolve it would
-be to escalate. Often the
-escalation path is to a broader team discussion, having a TL weigh in, asking
-for a decision from a maintainer of the code, or asking an Eng Manager to help
-out. **Don't let a CL sit around because the author and the reviewer can't come
-to an agreement.**
+もしそれでも対立が解消しない場合、最も一般的な方法は問題の解決を上位レベルに移譲することです。よくある移譲の経路としては、より広いチームディスカッションを行う、TL に仲裁に入ってもらう、コードのメンテナに決定を求める、Eng Manager に助けを求める、といった選択肢があります。**CL の作者とレビュアが合意を得られないという理由で、CL を放置してはなりません。**
 
 Next: [コードレビューで何を期待するべきか](looking-for.md)
