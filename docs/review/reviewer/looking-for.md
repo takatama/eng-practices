@@ -20,20 +20,9 @@
 
 ## 複雑さ
 
-Is the CL more complex than it should be? Check this at every level of the
-CL—are individual lines too complex? Are functions too complex? Are classes too
-complex? "Too complex" usually means **"can't be understood quickly by code
-readers."** It can also mean **"developers are likely to introduce bugs when
-they try to call or modify this code."**
+CL は必要以上に複雑ではないでしょうか？ これは CL のあらゆるレベルで確認してください。1行1行、どの行も複雑ではないですか？ 「複雑すぎる」とは、通常**「コードの読み手が素早く理解できない」**という意味です。また、**「開発者がこのコードを呼び出したり修正しようとしたときにバグが入り込みやすい」**と言うこともできます。
 
-A particular type of complexity is **over-engineering**, where developers have
-made the code more generic than it needs to be, or added functionality that
-isn't presently needed by the system. Reviewers should be especially vigilant
-about over-engineering. Encourage developers to solve the problem they know
-needs to be solved *now*, not the problem that the developer speculates *might*
-need to be solved in the future. The future problem should be solved once it
-arrives and you can see its actual shape and requirements in the physical
-universe.
+典型的な種類の複雑さは、開発者が必要以上にコードを一般化してしまったり、現在はシステムに必要ではない機能を追加してしまうといった、**オーバーエンジニアリング**です。レビュアは特に、オーバーエンジニアリングに警戒しなければなりません。将来解決する必要がある**かもしれない**と予想される問題ではなく、**今現在**解決する必要があると知っている問題を解決するよう、開発者を促してください。将来の問題は、問題が現れたときに解決されるべきです。問題の具体的な形や要件を確認することができるのは、予想している頭の中ではなく、物理的な宇宙の中においてなのです。
 
 ## テスト
 
