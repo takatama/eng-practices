@@ -40,22 +40,11 @@ CL に含めるテストは、正しく、意味があり、役に立つもの�
 
 ## コメント
 
-Did the developer write clear comments in understandable English? Are all of the
-comments actually necessary? Usually comments are useful when they **explain
-why** some code exists, and should not be explaining *what* some code is doing.
-If the code isn't clear enough to explain itself, then the code should be made
-simpler. There are some exceptions (regular expressions and complex algorithms
-often benefit greatly from comments that explain what they're doing, for
-example) but mostly comments are for information that the code itself can't
-possibly contain, like the reasoning behind a decision.
+開発者は、理解できる英語で明確なコメントを書いていますか？ すべてのコメントは実際に必要なものですか？ 通常コメントが役に立つのは、あるコードが存在するのが**なぜかという理由 (why) を説明している**ような場合であり、あるコードが**何をしているのか (what)** を説明するようなものであってはいけません。もしコードがそれ自体で何をしているのかわかるほどクリアでないときは、コードをもっとシンプルにしなければなりません。いくつか例外はあります (たとえば、正規表現や複雑なアルゴリズムの場合、通常は何をしているのかを説明するコメントは大いに助けとなります) が、大部分のコメントは、決定の背後にある理由を説明するような、コード自体に含めるのが困難な情報のために書かなければなりません。
 
-It can also be helpful to look at comments that were there before this CL. Maybe
-there is a TODO that can be removed now, a comment advising against this change
-being made, etc.
+この CL の前に書かれていたコメントを読むことも助けとなることがあります。あるいは今回削除される TODO があるかもしれませんし、この CL が行おうとしている変更はするべきではないというアドバイスとなるコメントなどがあるかもしれません。
 
-Note that comments are different from *documentation* of classes, modules, or
-functions, which should instead express the purpose of a piece of code, how it
-should be used, and how it behaves when used.
+コメントは、クラス・モジュール・関数などの**ドキュメント**ではないことに注意してください。ドキュメントは、コードの目的を示したり、どのように使用するべきかを説明したり、使用したときどのように動作するかが書かれますが、コメントは違います。
 
 ## スタイル
 
