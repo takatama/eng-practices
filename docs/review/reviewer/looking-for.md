@@ -2,46 +2,21 @@
 
 
 
-Note: Always make sure to take into account
-[The Standard of Code Review](standard.md) when considering each of these
-points.
+注意: 以下の各ポイントについて考えるときは、必ず[コードレビューの基準](standard.md)を考慮するようにしてください。
 
 ## 設計
 
-The most important thing to cover in a review is the overall design of the CL.
-Do the interactions of various pieces of code in the CL make sense? Does this
-change belong in your codebase, or in a library? Does it integrate well with the
-rest of your system? Is now a good time to add this functionality?
+レビュー中に取り上げるべき最も重要なことは、CL の全体的な設計をどのようにするかということです。CL 中のさまざまなコードのインタラクションは意味のあるものですか？ その変更はコードベースかライブラリ、どちらに帰属するべきものでしょうか？ システムの残りの部分とよく統合されていますか？ その機能を追加するのは本当に今が適切なタイミングですか？
 
-## 機能
+## 機能性
 
-Does this CL do what the developer intended? Is what the developer intended good
-for the users of this code? The "users" are usually both end-users (when they
-are affected by the change) and developers (who will have to "use" this code in
-the future).
+その CL は開発者が意図した通りのことを行っているでしょうか？ 開発者は、そのコードのユーザーにとって、どんなよいことがあると考えていますか？ ここで言う「ユーザー」とは、通常エンドユーザー (もし変更がエンドユーザーに影響する場合) と開発者 (将来このコードを「使う」必要があるユーザーのこと) の双方のことを指します。
 
-Mostly, we expect developers to test CLs well-enough that they work correctly by
-the time they get to code review. However, as the reviewer you should still be
-thinking about edge cases, looking for concurrency problems, trying to think
-like a user, and making sure that there are no bugs that you see just by reading
-the code.
+ほとんどの場合、私たちレビュアは、開発者がコードレビューを受ける前に CL が正しく動作していることを十分よくテストしていると期待します。しかし、あなたはレビュアとしてさらに、エッジケースについて考え、平行性の問題を探し、自分がユーザーとなったときのことを想像し、コードを読むだけでわかるようなバグが存在しないことを確認しなければなりません。
 
-You *can* validate the CL if you want—the time when it's most important for a
-reviewer to check a CL's behavior is when it has a user-facing impact, such as a
-**UI change**. It's hard to understand how some changes will impact a user when
-you're just reading the code. For changes like that, you can have the developer
-give you a demo of the functionality if it's too inconvenient to patch in the CL
-and try it yourself.
+必要に応じてレビュア自身で CL の動作を検証**してもよい**ですが、レビュアによる CL の動作チェックが最も重要なのは、**UI の変更**のような、ユーザーに直接影響を与えるような変更が含まれている場合です。コードを読むだけでは、一部の変更がユーザーにどのくらい大きな影響を与えるのかを理解するのは困難です。そのような変更に対しては、もし CL にパッチを当てて自分で試してみるのが大変な場合は、開発者に機能性を確認するためのデモを提供するように依頼することが許されます。
 
-Another time when it's particularly important to think about functionality
-during a code review is if there is some sort of **parallel programming** going
-on in the CL that could theoretically cause deadlocks or race conditions. These
-sorts of issues are very hard to detect by just running the code and usually
-need somebody (both the developer and the reviewer) to think through them
-carefully to be sure that problems aren't being introduced. (Note that this is
-also a good reason not to use concurrency models where race conditions or
-deadlocks are possible—it can make it very complex to do code reviews or
-understand the code.)
+他にも、コードレビュー中に機能性について考えるのが特に重要となることがあります。CL の中で行われているある種の **並列プログラミング** が、理論的にデッドロックやレースコンディションを引き起こす可能性があるような場合です。 ある種の問題は、単にコードを実行しただけでは発見するのが非常に困難です。通常、誰か (開発者とレビュアの双方) がそのような平行性の問題が入り込んでいないことを、コード全体を通して注意深く考え抜く必要があります。(これはまた、レースコンディションやデッドロックが起こりうる並行性モデルを使用しない方が良い理由でもあります。そのような並行性モデルを使用すると、コードレビューやコードの理解が非常に複雑になってしまいます。)
 
 ## 複雑さ
 
