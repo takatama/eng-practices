@@ -45,9 +45,7 @@ complexity in tests just because they aren't part of the main binary.
 
 ## 命名
 
-Did the developer pick good names for everything? A good name is long enough to
-fully communicate what the item is or does, without being so long that it
-becomes hard to read.
+開発者はあらゆるものによい名前を選んでいますか？ よい名前とは、その要素が何であるか、または何をするものであるかを、完全に伝えられ、かつ読むのが難しくなるほど長すぎない、適切な長さの名前のことです。
 
 ## コメント
 
