@@ -26,22 +26,13 @@ CL は必要以上に複雑ではないでしょうか？ これは CL のあら
 
 ## テスト
 
-Ask for unit, integration, or end-to-end
-tests as appropriate for the change. In general, tests should be added in the
-same CL as the production code unless the CL is handling an
-[emergency](../emergencies.md).
+変更に対して適切な、ユニットテスト、インテグレーションテスト、または E2E テストを求めてください。一般に、[緊急事態](../emergencies.md)に扱うコードでない限りは、テストは必ずプロダクションコードと同じ CL に含めなければなりません。
 
-Make sure that the tests in the CL are correct, sensible, and useful. Tests do
-not test themselves, and we rarely write tests for our tests—a human must ensure
-that tests are valid.
+CL に含めるテストは、正しく、意味があり、役に立つものであるようにしてください。テストはそのテスト自体をテストするわけではなく、私たちがテスト自体に対するテストを書くこともほとんどありません。そのため、テストが有効なものであることは、人間が保証しなければなりません。
 
-Will the tests actually fail when the code is broken? If the code changes
-beneath them, will they start producing false positives? Does each test make
-simple and useful assertions? Are the tests separated appropriately between
-different test methods?
+そのテストは、コードが壊れたときに実際に失敗するものになっていますか？ そのコードが変化を受けたとき、フォールス・ポジティブを示すようになっていないでしょうか？ 各テストはシンプルで役に立つアサーションを行っていますか？ テストは異なるテストモジュール間で適切に分離されていますか？
 
-Remember that tests are also code that has to be maintained. Don't accept
-complexity in tests just because they aren't part of the main binary.
+テストもメンテナンスが必要だということを覚えておいてください。単にメインバイナリの一部でないからといって、テストの中に含まれる複雑さを受け入れてはなりません。
 
 ## 命名
 
