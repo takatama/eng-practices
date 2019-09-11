@@ -56,13 +56,7 @@ CL の作者は、大きなスタイルの変更を、その他の変更と同�
 
 ## ドキュメント
 
-If a CL changes how users build, test, interact with, or release code, check to
-see that it also updates associated documentation, including
-READMEs, g3doc pages, and any generated
-reference docs. If the CL deletes or deprecates code, consider whether the
-documentation should also be deleted.
-If documentation is
-missing, ask for it.
+CL の変更により、ユーザーのビルド方法、テストの方法、コードの使い方、リリースされるコードなどが変更される場合には、同時に関連するドキュメントが更新されているかどうかもチェックしてください。対象となるドキュメントは、README、g3doc のページ、あらゆる自動生成されるリファレンスドキュメントなどです。もし CL がコードを削除したり廃止にしたりするものであれば、同時にドキュメントも削除するべきではないか考えてください。もしドキュメントが存在しなければ、作成するように依頼してください。
 
 ## すべての行 {#every_line}
 
