@@ -48,21 +48,11 @@ CL に含めるテストは、正しく、意味があり、役に立つもの�
 
 ## スタイル
 
-We have [スタイルガイド](http://google.github.io/styleguide/) at Google for all
-of our major languages, and even for most of the minor languages. Make sure the
-CL follows the appropriate style guides.
+Google には、主に使用されている主要な言語のすべてだけでなく、マイナーな言語のすべてにも[スタイルガイド](http://google.github.io/styleguide/)が存在します。CL が適切なスタイルガイドに従っていることを保証してください。
 
-If you want to improve some style point that isn't in the style guide, prefix
-your comment with "Nit:" to let the developer know that it's a nitpick that you
-think would improve the code but isn't mandatory. Don't block CLs from being
-submitted based only on personal style preferences.
+スタイルガイドに書かれていない点でスタイルの改善を行いたい場合は、コメントの前に "Nit:" と書いて、必須ではないがコードを改善できるかもしれないポイントを示していることを開発者に知らせてください。個人的なスタイルの好みだけに基づいて、提出された CL をブロックしてはなりません。
 
-The author of the CL should not include major style changes combined with other
-changes. It makes it hard to see what is being changed in the CL, makes merges
-and rollbacks more complex, and causes other problems. For example, if the
-author wants to reformat the whole file, have them send you just the
-reformatting to as one CL, and then send another CL with their functional
-changes after that.
+CL の作者は、大きなスタイルの変更を、その他の変更と同じ CL に含めるべきではありません。スタイルの変更とそれ以外の変更が同じ CL に含まれていると、CL の中で何が変更されたのかを確認することが難しくなってしまいますし、マージやロールバックの作業が複雑になってしまい、その他にも問題を引き起こしてしまいます。もし作者がファイル全体を再フォーマットしたいと思った時は、最初に再フォーマットを行う1つの CL を送り、その後に機能的な変更を別の CL として送るようにします。
 
 ## ドキュメント
 
