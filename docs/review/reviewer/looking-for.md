@@ -68,27 +68,13 @@ CL の変更により、ユーザーのビルド方法、テストの方法、�
 
 ## コンテキスト
 
-It is often helpful to look at the CL in a broad context. Usually the code
-review tool will only show you a few lines of code around the parts that are
-being changed. Sometimes you have to look at the whole file to be sure that the
-change actually makes sense. For example, you might see only four new lines
-being added, but when you look at the whole file, you see those four lines are
-in a 50-line method that now really needs to be broken up into smaller methods.
+CL を広いコンテキストの上で捉えることは役に立つことが多いです。通常、コードレビューツールでは、変更された部分の周辺の数行しか表示されません。変更が実際に意味のあるものかどうか確認するためには、ファイル全体を読んで確認する必要がある場合もあります。たとえば、新しいコードが4行だけ追加された変更があった時、ファイル全体を読んだ結果、そのコードは50行あるメソッドに追加されており、現在の状態では実際には小さいメソッドに分割する必要があることを発見するかもしれません。
 
-It's also useful to think about the CL in the context of the system as a whole.
-Is this CL improving the code health of the system or is it making the whole
-system more complex, less tested, etc.? **Don't accept CLs that degrade the code
-health of the system.** Most systems become complex through many small changes
-that add up, so it's important to prevent even small complexities in new
-changes.
+また、CL を全体としてのシステムのコンテキストにおいて考えてみることも役に立ちます。この CL はシステムのコードの健全性を向上させているでしょうか？ それとも、システム全体をより複雑にしたり、システムをよりテストされていない状態に劣化させたりしているでしょうか？ **システムのコードの健全性を劣化させるような CL は、決して受け入れてはなりません。**ほとんどのシステムは、小さな変更の積み重ねにより複雑になって行くものです。そのため、たとえほんの小さな複雑性であっても、新しい変更には入り込まないように防ぐことが重要です。
 
 ## よいこと {#good_things}
 
-If you see something nice in the CL, tell the developer, especially when they
-addressed one of your comments in a great way. Code reviews often just focus on
-mistakes, but they should offer encouragement and appreciation for good
-practices, as well. It’s sometimes even more valuable, in terms of mentoring, to
-tell a developer what they did right than to tell them what they did wrong.
+CL に何か優れたところがあったときには、そのことを開発者に伝えましょう。特に、あなたのコメントに素晴らしい対応をした場合にはなおさらです。コードレビューでは間違いにだけ注意を向けてしまいがちですが、同時に、よいプラクティスに対して、励ましや感謝を与える場でもなければなりません。メンタリングの観点からも、開発者が間違いを犯したことを指摘することよりも、開発者が正しいことをした時に、よいことをしたと声をかけてあげることの方が、ずっと大きな価値のあることです。
 
 ## まとめ
 
