@@ -60,26 +60,11 @@ CL の変更により、ユーザーのビルド方法、テストの方法、�
 
 ## すべての行 {#every_line}
 
-Look at *every* line of code that you have been assigned to review. Some things
-like data files, generated code, or large data structures you can scan over
-sometimes, but don't scan over a human-written class, function, or block of code
-and assume that what's inside of it is okay. Obviously some code deserves more
-careful scrutiny than other code&mdash;that's a judgment call that you have to
-make&mdash;but you should at least be sure that you *understand* what all the
-code is doing.
+レビュアは、レビューに割り当てられたコードの**すべての**行を読んでください。データファイル、自動生成コード、巨大なデータ構造などの一部のファイルは、何回か目を通して確認するだけでも構いませんが、人間が書いたクラス、関数、コードブロックなどは、ただ目を通して中に書かれているものが問題ないと判断してはいけません。コードのある部分は、明らかに他の部分よりも注意深い精査が必要になり、それはレビュアとしてのあなたの判断で行わなければなりません。少なくともコードが何を行っているのかを自分で**理解**しなければなりません。
 
-If it's too hard for you to read the code and this is slowing down the review,
-then you should let the developer know that
-and wait for them to clarify it before you try to review it. At Google, we hire
-great software engineers, and you are one of them. If you can't understand the
-code, it's very likely that other developers won't either. So you're also
-helping future developers understand this code, when you ask the developer to
-clarify it.
+もしコードを読むのが難しくて素早くレビューできない場合には、そのことを開発者に知らせて、レビューしようとする前に開発者がコードをもっと明確にするのを待ちましょう。Google では、優れたソフトウェアエンジニアを雇っており、あなたもその一員です。もしあなたがコードを理解できないのなら、他の開発者もコードを理解できない可能性が非常に高いです。そのため、開発者にコードをもっと明確にするように頼むことは、将来このコードを理解しようとする未来の開発者も同時に助けることになります。
 
-If you understand the code but you don't feel qualified to do some part of the
-review, make sure there is a reviewer on the CL who is qualified, particularly
-for complex issues such as security, concurrency, accessibility,
-internationalization, etc.
+セキュリティ、並行性、アクセシビリティ、国際化などの特に複雑な問題に対しては、もしあなたがコードを理解できたとしても、レビューの一部について自分が対応するのはふさわしくないと感じるなら、その部分にふさわしいレビュアを CL のレビュアに加えるようにしてください。
 
 ## コンテキスト
 
