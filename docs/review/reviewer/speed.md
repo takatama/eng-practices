@@ -20,19 +20,11 @@
 
 以下のガイドラインに従うならば、通常の CL では、1日の間に (必要があれば) 複数回のラウンドでレビューを行わなければならない、ということになります。
 
-## 速さ vs. 解釈 {#interruption}
+## 速さ vs. 中断 {#interruption}
 
-There is one time where the consideration of personal velocity trumps team
-velocity. **If you are in the middle of a focused task, such as writing code,
-don't interrupt yourself to do a code review.** Research has shown that it can
-take a long time for a developer to get back into a smooth flow of development
-after being interrupted. So interrupting yourself while coding is actually
-_more_ expensive to the team than making another developer wait a bit for a code
-review.
+個人の速度がチームの速度に優先されると考えられる場合が1つあります。**もしあなたがコードを書くなど、1つのタスクに対して集中状態にある場合には、コードレビューをするために自分の集中を妨げてはなりません。**これまでの研究によれば、開発者が作業を中断された後に開発のなめらかなフローに戻るためには、長い時間がかかることが示されてきました。そのため、コードレビューをするまでに他の開発者を少しだけ待たせるより、コーディング中に自分の集中を妨げた方が、実際には**より高い**コストがかかってしまいます。
 
-Instead, wait for a break point in your work before you respond to a request for
-review. This could be when your current coding task is completed, after lunch,
-returning from a meeting, coming back from the microkitchen, etc.
+その代わり、レビューのリクエストに返事をする前に、自分の仕事に一休みできるタイミングが来るのを待ちましょう。こうしたタイミングとしては、現在のコーディングのタスクが完了した時、ランチが終わった後、ミーティングから帰ってきた時、microkitchen から帰ってきた時などがあります。
 
 ## 素早い応答 {#responses}
 
