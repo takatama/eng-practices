@@ -59,16 +59,7 @@
 
 ## 時間の経過によるコードレビューの改善 {#time}
 
-If you follow these guidelines and you are strict with your code reviews, you
-should find that the entire code review process tends to go faster and faster
-over time. Developers learn what is required for healthy code, and send you CLs
-that are great from the start, requiring less and less review time. Reviewers
-learn to respond quickly and not add unnecessary latency into the review
-process.
-But **don't compromise on
-the [code review standards](standard.md) or quality for an imagined improvement
-in velocity**&mdash;it's not actually going to make anything happen more
-quickly, in the long run.
+もしあなたがこれらのガイドラインに従い、厳しくコードレビューに取り組んだなら、時が経つに連れ、あなたのコードレビューのプロセス全体がどんどん速くなっていくことに気がつくはずです。開発者はコードが健康であるために必要なものが何かを学び、初めから優れた CL を送ってくるようになります。その結果、レビューに必要な時間もますます短くなっていきます。レビュアも素早く返事を書くことに慣れ、レビュープロセスに不必要なレイテンシーを加えないようになっていきます。しかし、**想像上の速度を上げるために、[コードレビューの基準](standard.md)やコードの質を妥協したりしてはなりません。**長い目で見れば、そのようなことをしてしまうと、実際にはチームの速度をより遅くすることにしかなりません。
 
 ## 緊急事態
 
