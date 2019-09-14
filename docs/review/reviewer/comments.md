@@ -4,12 +4,10 @@
 
 ## まとめ
 
--   Be kind.
--   Explain your reasoning.
--   Balance giving explicit directions with just pointing out problems and
-    letting the developer decide.
--   Encourage developers to simplify code or add code comments instead of just
-    explaining the complexity to you.
+-   やさしさを持ちましょう。
+-   あなたの考えの論理を説明しましょう。
+-   問題を指摘して明確な方向性を示すことと、開発者自身に決定させることのバランスを取りましょう。
+-   レビュアのあなただけに複雑なコードの意味を説明させるのではなく、代わりに開発者に対して、コードをシンプルにしたりコードにコメントを追加してもらうようにしましょう。
 
 ## 礼儀
 
