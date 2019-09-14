@@ -53,20 +53,9 @@
 
 ## 大きな CL {#large}
 
-If somebody sends you a code review that is so large you're not sure when you
-will be able to have time to review it, your typical response should be to ask
-the developer to
-[split the CL into several smaller CLs](../developer/small-cls.md) that build on
-each other, instead of one huge CL that has to be reviewed all at once. This is
-usually possible and very helpful to reviewers, even if it takes additional work
-from the developer.
+もし誰かがあなたにとても大きなコードレビューを送り、あなたがそれをレビューする時間がいつ確保できるかわからない場合、通常あなたが開発者に返すべき返事は、すべてを一度にレビューしなければならない1つの巨大な CL を送る代わりに、互いに構成された[もっと小さな複数の CL に分割](../developer/small-cls.md)してほしい、というお願いです。開発者には追加の作業が必要になるとしても、CL の分割は通常は可能であり、レビュアにとっても非常に助けになることだからです。
 
-If a CL *can't* be broken up into smaller CLs, and you don't have time to review
-the entire thing quickly, then at least write some comments on the overall
-design of the CL and send it back to the developer for improvement. One of your
-goals as a reviewer should be to always unblock the developer or enable them to
-take some sort of further action quickly, without sacrificing code health to do
-so.
+もし CL を小さな CL に分割することが**不可能**であり、あなたにコード全体を素早くレビューする時間もないときは、少なくとも CL 全体の設計についてコメントをいくつか書いて、CL を改善できるように開発者に返信をしてください。レビュアとしてのあなたが目標としなければならないのは、開発者を常にブロックしないことであり、開発者が何らかの追加の行動を、コードの健康状態を損なうことなく素早く行えるようにすることなのです。
 
 ## 時間の経過によるコードレビューの改善 {#time}
 
