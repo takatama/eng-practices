@@ -42,21 +42,14 @@
 
 ## コメント付き LGTM {#lgtm-with-comments}
 
-In order to speed up code reviews, there are certain situations in which a
-reviewer should give LGTM/Approval even though they are also leaving unresolved
-comments on the CL. This is done when either:
+コードレビューのスピードを上げるために、次のいずれかの状況では、CL に未解決のコメントが残っている場合であっても、レビュアが LGTM や承認を与えることがあります。
 
-*   The reviewer is confident that the developer will appropriately address all
-    the reviewer's remaining comments.
-*   The remaining changes are minor and don't _have_ to be done by the
-    developer.
+*   開発者がレビュアに残されたすべてのコメントに適切に対処するであろうことを、レビュアが確信している場合。
+*   残された変更が細かいものであり、開発者が**必ず**変更しなければならないものではない場合。
 
-The reviewer should specify which of these options they intend, if it is not
-otherwise clear.
+レビュアがこれらの選択肢のどちらを意図しているのかが明らかではない場合には、明示的にどちらであるかを示さなければなりません。
 
-LGTM With Comments is especially worth considering when the developer and
-reviewer are in different time zones and otherwise the developer would be
-waiting for a whole day just to get "LGTM, Approval."
+このような「コメント付き LGTM」は、特に開発者とレビュアが別のタイムゾーンにいる場合に活用を検討する価値があります。これを使わなければ、「LGTM、承認します。」という返事を受け取るためだけに、開発者がまる1日待たされることになりかねないからです。
 
 ## 大きな CL {#large}
 
