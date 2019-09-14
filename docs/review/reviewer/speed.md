@@ -38,9 +38,7 @@
 
 ## タイムゾーンを越えるレビュー {#tz}
 
-When dealing with time zone differences, try to get back to the author when they
-are still in the office. If they have already gone home, then try to make sure
-your review is done before they get back to the office the next day.
+タイムゾーンの違いに対処するために、CL の作者がまだオフィスにいる間に返信を送るように努めてください。すでに自宅に帰ってしまったときは、翌日にオフィスに戻ってくる前にレビューが確実に完了するように努めてください。
 
 ## コメント付き LGTM {#lgtm-with-comments}
 
