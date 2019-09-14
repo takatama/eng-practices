@@ -12,7 +12,7 @@
 *   **開発者がコードレビューのプロセスに抵抗するようになってしまう。**もしもレビュアが数日に1回しか返事をせず、CL を送るたびに大きな変更を要求するようなことをすれば、開発者には大きなストレスがかかり、変更を加えるのが大変になってしまいます。多くの場合、このような状況は、レビュアの仕事が「厳しすぎる」という不満として現れます。レビュアが**同一の**大きな変更を要求したしても、開発者が変更をするたびに**すみやかに**返事が返ってくれば、不満は無くなる傾向があります。**コードレビューのプロセスに関する不満の大部分は、実際にはレビューのプロセスをすみやかに行うことによって解消されます。**
 *   **コードの健康状態に大きな影響を与えてしまう。**レビューが遅いと、開発者に完璧ではない CL を提出しないようにさせる圧力が掛かります。さらに、レビューが遅いと、コードのクリーンアップ、リファクタリング、既存の CL に対する追加の改善をしようとする気持ちも弱めてしまいます。
 
-## コードレビューはどのくらい早くあるべきか？ {#fast}
+## コードレビューはどのくらい速く行うべきか？ {#fast}
 
 集中状態にあるタスクがない場合には、**レビュー対象のコードが来たすぐ後にコードレビューを行なわなければなりません。**
 
@@ -28,27 +28,13 @@
 
 ## 素早い応答 {#responses}
 
-When we talk about the speed of code reviews, it is the _response_ time that we
-are concerned with, as opposed to how long it takes a CL to get through the
-whole review and be submitted. The whole process should also be fast, ideally,
-but **it's even more important for the _individual responses_ to come quickly
-than it is for the whole process to happen rapidly.**
+私たちがコードレビューの速さについて話すときに関心があるのは、CL のレビュー全体にかかった時間や、CL を提出するまでに掛かった時間ではなく、レビューの**レスポンス**の速さです。プロセス全体の時間が早いのも理想ではありますが、**さらに重要なのは、プロセス全体が高速に行われることよりも、「一つひとつのレスポンス」がもっと早くなることです。** 
 
-Even if it sometimes takes a long time to get through the entire review
-_process_, having quick responses from the reviewer throughout the process
-significantly eases the frustration developers can feel with "slow" code
-reviews.
+レビューの**プロセス**全体には長い時間がかかることがあったとしても、レビューのプロセス全体を通してレビュアから素早くレスポンスが返ってくるだけで、開発者がコードレビューが「遅い」と感じることによる苛立ちを大幅に和らげることができます。
 
-If you are too busy to do a full review on a CL when it comes in, you can still
-send a quick response that lets the developer know when you will get to it,
-suggest other reviewers who might be able to respond more quickly, or
-[provide some initial broad comments](navigate.md). (Note: none of this means
-you should interrupt coding even to send a response like this&mdash;send the
-response at a reasonable break point in your work.)
+もしあなたが忙しすぎて、CL が送られてきてすぐに全体をレビューできない場合でも、素早い返事を送ることで、開発者にいつレビューに取り書かれるかを伝えたり、もっと早くレスポンスを返すことができる他のレビュアを提案したり、あるいは、[いくつか最初の全般的なコメントを送る](navigate.md)ことができます。(注意: これらのいずれも、こうしたコメントを送るために、あなたが集中してコーディングしているのを中断してもよい、という意味ではありません。作業に集中している場合には、その作業がひとやすみできる適切なタイミングを見つけて返事を送るようにしてください。)
 
-**It is important that reviewers spend enough time on review that they are
-certain their "LGTM" means "this code meets [our standards](standard.md)."**
-However, individual responses should still ideally be [fast](#fast).
+**レビュアが「LGTM」という言葉を使う時、本当に「このコードは [Google のコードレビューの基準を満たしている](standard.md)」という意味になっているか、レビューに十分な時間をかけて確認することが重要です。**しかし理想的には、一つひとつの返信は、やはり[速く](#fast)あるべきです。
 
 ## タイムゾーンを越えるレビュー {#tz}
 
