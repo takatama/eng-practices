@@ -14,14 +14,11 @@
 
 ## コードレビューはどのくらい早くあるべきか？ {#fast}
 
-If you are not in the middle of a focused task, **you should do a code review
-shortly after it comes in.**
+集中状態にあるタスクがない場合には、**レビュー対象のコードが来たすぐ後にコードレビューを行なわなければなりません。**
 
-**One business day is the maximum time it should take to respond** to a code
-review request (i.e. first thing the next morning).
+コードレビューリクエストに対して、**返事をするまでに掛けることが許される最大の時間は、1営業日です。** (つまり、最低でも翌日最初にするべきです。)
 
-Following these guidelines means that a typical CL should get multiple rounds of
-review (if needed) within a single day.
+以下のガイドラインに従うならば、通常の CL では、1日の間に (必要があれば) 複数回のラウンドでレビューを行わなければならない、ということになります。
 
 ## 速さ vs. 解釈 {#interruption}
 
