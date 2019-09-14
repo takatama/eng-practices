@@ -19,11 +19,7 @@
 
 ## なぜかという理由を説明する {#why}
 
-One thing you'll notice about the "good" example from above is that it helps the
-developer understand *why* you are making your comment. You don't always need to
-include this information in your review comments, but sometimes it's appropriate
-to give a bit more explanation around your intent, the best practice you're
-following, or how your suggestion improves code health.
+上の「よい」例で気がつくことの1つは、開発者が**「なぜか」という理由 (why)** を理解することをコメントが助けているという点です。あなたのレビューコメントに常にこの情報を加える必要はありませんが、あなたのコメントの意図、あなたが従っているベストプラクティス、あなたの提案でコードの健康状態がどのように改善するか、などの追加説明を加える方が適切なこともあります。
 
 ## ガイダンスを与える {#guidance}
 
