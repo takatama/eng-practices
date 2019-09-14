@@ -11,21 +11,11 @@
 
 ## 礼儀
 
-In general, it is important to be
-courteous and respectful while also being
-very clear and helpful to the developer whose code you are reviewing. One way to
-do this is to be sure that you are always making comments about the *code* and
-never making comments about the *developer*. You don't always have to follow
-this practice, but you should definitely use it when saying something that might
-otherwise be upsetting or contentious. For example:
+一般に、コードをレビューしている開発者に対しては、非常に明快な態度を取り、助けに満ちた気持ちを示すとともに、丁寧に、尊敬の気持ちを持って接することが大切です。このことを実践する方法の1つは、決して**開発者**についてコメントをしないで、必ず**コード**についてコメントをすることを忘れないことです。このプラクティスには必ず従わなければならないというわけではありませんが、このように話さなければ相手を怒らせてしまったり、争いのもとになってしまう可能性のあることを言う場合には、このプラクティスを絶対に使わなければなりません。以下に例を示します。
 
-Bad: "Why did **you** use threads here when there's obviously no benefit to be
-gained from concurrency?"
+悪い例: "どうして**あなたは**ここでスレッドを使用したのですか？ この場所で並列性から得られる恩恵がないのは明らかですよね？"
 
-Good: "The concurrency model here is adding complexity to the system without any
-actual performance benefit that I can see. Because there's no performance
-benefit, it's best for this code to be single-threaded instead of using multiple
-threads."
+よい例: "この場所の並列性モデルはシステムに複雑さを加えていますが、私には具体的な性能の恩恵は得られていないように見えます。性能向上が得られない場合には、このコードはマルチスレッドにする代わりにシングルスレッドにするのが最適です。"
 
 ## なぜかという理由を説明する {#why}
 
