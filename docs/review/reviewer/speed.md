@@ -4,29 +4,13 @@
 
 ## なぜコードレビューは早くなければならないのか？ {#why}
 
-**At Google, we optimize for the speed at which a team of developers can produce
-a product together**, as opposed to optimizing for the speed at which an
-individual developer can write code. The speed of individual development is
-important, it's just not _as_ important as the velocity of the entire team.
+**Google では、開発者のチームが1つの製品を協力して開発する速度を最適化しています。**これは、個人の開発者がコードを書くことができる速度を最適化するのとは逆です。個人の開発者の速度が重要なのは確かですが、チーム全体の速度と**同じくらい**重要というわけではありません。
 
-When code reviews are slow, several things happen:
+もしもコードレビューが遅かった場合、以下のような問題が起こってしまいます。
 
-*   **The velocity of the team as a whole is decreased.** Yes, the individual,
-    who doesn't respond quickly to the review, gets other work done. However,
-    new features and bug fixes for the rest of the team are delayed by days,
-    weeks, or months as each CL waits for review and re-review.
-*   **Developers start to protest the code review process.** If a reviewer only
-    responds every few days, but requests major changes to the CL each time,
-    that can be frustrating and difficult for developers. Often, this is
-    expressed as complaints about how "strict" the reviewer is being. If the
-    reviewer requests the _same_ substantial changes (changes which really do
-    improve code health) but responds _quickly_ every time the developer makes
-    an update, the complaints tend to disappear. **Most complaints about the
-    code review process are actually resolved by making the process faster.**
-*   **Code health can be impacted.** When reviews are slow, there is increased
-    pressure to allow developers to submit CLs that are not as good as they
-    could be. Slow reviews also discourage code cleanups, refactorings, and
-    further improvements to existing CLs.
+*   **チーム全体の速度が低下してしまう。**たしかに、ある個人がレビューに速やかに返事をしなかったとしても、他の仕事を進めることはできます。しかし、各 CL のレビューや再レビューの遅れが積み重なれば、チームの残りのメンバーが行う新しい機能やバグの修正に、数日、数週間、数ヶ月の遅れが生じてしまいます。
+*   **開発者がコードレビューのプロセスに抵抗するようになってしまう。**もしもレビュアが数日に1回しか返事をせず、CL を送るたびに大きな変更を要求するようなことをすれば、開発者には大きなストレスがかかり、変更を加えるのが大変になってしまいます。多くの場合、このような状況は、レビュアの仕事が「厳しすぎる」という不満として現れます。レビュアが**同一の**大きな変更を要求したしても、開発者が変更をするたびに**すみやかに**返事が返ってくれば、不満は無くなる傾向があります。**コードレビューのプロセスに関する不満の大部分は、実際にはレビューのプロセスをすみやかに行うことによって解消されます。**
+*   **コードの健康状態に大きな影響を与えてしまう。**レビューが遅いと、開発者に完璧ではない CL を提出しないようにさせる圧力が掛かります。さらに、レビューが遅いと、コードのクリーンアップ、リファクタリング、既存の CL に対する追加の改善をしようとする気持ちも弱めてしまいます。
 
 ## コードレビューはどのくらい早くあるべきか？ {#fast}
 
