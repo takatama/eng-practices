@@ -63,10 +63,6 @@
 
 ## 緊急事態
 
-There are also [緊急事態](../emergencies.md) where CLs must pass through the
-_whole_ review process very quickly, and where the quality guidelines would be
-relaxed. However, please see [緊急事態とはどのような時か？](../emergencies.md#what) for
-a description of which situations actually qualify as emergencies and which
-don't.
+[緊急事態](../emergencies.md)と呼ばれる事態が起こったときには、CL は**すべての**レビュープロセスを非常に速く通過しなければならず、品質に関するガイドラインは緩和されます。しかし、どのような事態が緊急事態と呼ぶ資格があるのかという基準については、[緊急事態とはどのような時か？](../emergencies.md#what) を確認してください。
 
 Next: [コードレビューのコメントの書き方](comments.md)
