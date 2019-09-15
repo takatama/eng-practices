@@ -23,21 +23,11 @@
 
 ## ガイダンスを与える {#guidance}
 
-**In general it is the developer's responsibility to fix a CL, not the
-reviewer's.** You are not required to do detailed design of a solution or write
-code for the developer.
+**一般に、CL を修正するのは開発者の責任であり、レビュアの責任ではありません。**レビュアのあなたには、問題を解決する詳細な設計や開発者のためにコードを書くことは要求されません。
 
-This doesn't mean the reviewer should be unhelpful, though. In general you
-should strike an appropriate balance between pointing out problems and providing
-direct guidance. Pointing out problems and letting the developer make a decision
-often helps the developer learn, and makes it easier to do code reviews. It also
-can result in a better solution, because the developer is closer to the code
-than the reviewer is.
+ただし、これはレビュアが開発者に手助けをしなくてもよいということではありません。一般に、レビュアには、問題点の指摘と直接的なガイダンスの提供という、両者の適切なバランスを取ることが求められます。問題点を指摘して解決方法の決定を開発者に委ねれば、開発者が学ぶ助けとなり、コードレビューをするのも簡単になります。また、開発者の方がレビュアよりもコードに親しんでいるため、より優れた解決方法を生み出すことにも繋がります。
 
-However, sometimes direct instructions, suggestions, or even code are more
-helpful. The primary goal of code review is to get the best CL possible. A
-secondary goal is improving the skills of developers so that they require less
-and less review over time.
+しかし、時には直接的な指示、提案、コードそのものを提供した方が助けとなることもあります。コードレビューの1番の目的は、できるだけ最善の CL を作ることにあります。時間を経て必要なレビューをより少なくするための開発者の技術の向上は、2次的な目標です。
 
 ## 説明を受け入れる {#explanations}
 
