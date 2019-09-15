@@ -14,21 +14,16 @@
 
 ## 緊急事態でないのはどのような時か？ {#not}
 
-To be clear, the following cases are *not* an emergency:
+緊急事態について明確にするために、以下に緊急事態**ではない**ような場合を挙げます。
 
--   Wanting to launch this week rather than next week (unless there is some
-    actual [hard deadline](#deadlines) for launch such as a partner agreement).
--   The developer has worked on a feature for a very long time and they really
-    want to get the CL in.
--   The reviewers are all in another timezone where it is currently nighttime or
-    they are away on an off-site.
--   It is the end of the day on a Friday and it would just be great to get this
-    CL in before the developer leaves for the weekend.
--   A manager says that this review has to be complete and the CL checked in
-    today because of a [soft (not hard) deadline](#deadlines).
--   Rolling back a CL that is causing test failures or build breakages.
+-   来週ではなく今週中に、新機能を立ち上げたいと望んでいる場合 (パートナー契約などの具体的な[ハード・デッドライン](#deadlines)が存在する場合を除く)。
+-   開発者が1つの機能に非常に長い時間、取り掛かり続けており、CL を取り込んでほしいと心から願っている場合。
+-   現在、レビュアの全員が深夜や勤務時間外である別のタイムゾーンにいる場合。
+-   金曜日の1日の終りで、週末に開発者が離れる前にぜひとも取り込んでおきたい CL がある場合。
+-   [ソフト・デッドライン (ハード・デッドラインではない)](#deadlines) が存在するため、マネージャが今日中にこのレビューを完了させて CL をチェックインする必要がある、と言っている場合。
+-   テストの失敗やビルドの破壊を起こした CL をロールバックする場合。
 
-And so on.
+などなど。
 
 ## ハード・デッドラインとは何か？ {#deadlines}
 
