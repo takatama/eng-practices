@@ -1,10 +1,8 @@
-# コードレビューでの差し戻しの扱い方
+# コードレビューでの反対の扱い方
 
 
 
-Sometimes a developer will push back on a code review. Either they will disagree
-with your suggestion or they will complain that you are being too strict in
-general.
+開発者はあなたのコードレビューに反対することがあります。一般には、あなたの提案に同意しなかったり、あなたのレビューが厳しすぎると不満を言う場合などがあります。
 
 ## 誰が正しいのか？ {#who_is_right}
 
@@ -77,7 +75,4 @@ value you're adding by being strict.
 
 ## 対立を解消する {#conflicts}
 
-If you are following all of the above but you still encounter a conflict between
-yourself and a developer that can't be resolved, see
-[The Standard of Code Review](standard.md) for guidelines and principles that
-can help resolve the conflict.
+以上のすべてに従ってもなお、あなたと開発者との間にある対立が解消できないときは、[コードレビューの基準](standard.md)を読んで、対立を解消するのを助けるガイダンスと原則を確認してください。
