@@ -31,14 +31,8 @@
 
 ## 説明を受け入れる {#explanations}
 
-If you ask a developer to explain a piece of code that you don't understand,
-that should usually result in them **rewriting the code more clearly**.
-Occasionally, adding a comment in the code is also an appropriate response, as
-long as it's not just explaining overly complex code.
+あなたが理解できないコードの説明を開発者にお願いしたときは、通常は、返事として**そのコードをもっとクリアに書き換え**なければなりません。場合によっては、コードにコメントを追加するのが返事として適切な場合もありますが、複雑なコードをそのままにして、その全体を説明するようなコメントであってはなりません。
 
-**Explanations written only in the code review tool are not helpful to future
-code readers.** They are acceptable only in a few circumstances, such as when
-you are reviewing an area you are not very familiar with and the developer
-explains something that normal readers of the code would have already known.
+**コードレビューツール上にしか書かれなかった説明は、将来のコードの読み手の助けにはなりません。**ツール上で説明を行うことが許されるのは、ごく限られた状況だけです。たとえば、レビュアが全然詳しくない領域について、普通のコードの読み手ならすでに知っていることを説明するような場合などです。
 
 Next: [コードレビューでの差し戻しの扱い方](pushback.md)
