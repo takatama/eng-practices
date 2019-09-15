@@ -27,28 +27,14 @@
 
 ## ハード・デッドラインとは何か？ {#deadlines}
 
-A hard deadline is one where **something disastrous would happen** if you miss
-it. For example:
+ハードデッドラインとは、もし守れなかったときに**何らかの大きな損害が発生すると考えられる**ような締め切りのことです。たとえば、次のようなものがあります。
 
--   Submitting your CL by a certain date is necessary for a contractual
-    obligation.
--   Your product will completely fail in the marketplace if not released by a
-    certain date.
--   Some hardware manufacturers only ship new hardware once a year. If you miss
-    the deadline to submit code to them, that could be disastrous, depending on
-    what type of code you’re trying to ship.
+-   あなたの CL を特定の期日までに送信することが契約上の義務である場合。
+-   特定の期日までにリリースしなければ、あなたのプロダクトが市場で完全に失敗することになる場合。
+-   ハードウェア製造者は1年に1回しか新しいハードウェアと製造できない場合があります。あなたが出荷しようとしているコードの種類によっては、もし製造者にコードを送信できなかったために締め切りが守れないと、大きな損害に繋がる可能性がある場合。
 
-Delaying a release for a week is not disastrous. Missing an important conference
-might be disastrous, but often is not.
+リリースが1週間遅れることは大きな損害とはなりません。重要なカンファレンスに出席できないことは大きな損害となることもあるかもしれませんが、大抵は違います。
 
-Most deadlines are soft deadlines, not hard deadlines. They represent a desire
-for a feature to be done by a certain time. They are important, but you
-shouldn’t be sacrificing code health to make them.
+ほとんどの締め切りはソフト・デッドラインであり、ハード・デッドラインではありません。ソフト・デッドラインは、特定の期日までにある機能が完成してほしいという要望を表現したものです。もちろんソフト・デッドラインも重要ですが、そのためにコードの健康状態を犠牲にしてはなりません。
 
-If you have a long release cycle (several weeks) it can be tempting to sacrifice
-code review quality to get a feature in before the next cycle. However, this
-pattern, if repeated, is a common way for projects to build up overwhelming
-technical debt. If developers are routinely submitting CLs near the end of the
-cycle that "must get in" with only superficial review, then the team should
-modify its process so that large feature changes happen early in the cycle and
-have enough time for good review.
+長期間のリリースサイクル (5、6週間くらい) がある場合、ある機能を次のサイクル前にリリースするために、コードレビューの質を犠牲にしようとすることも可能かもしれません。しかし、よくあるパターンは、このようなことを繰り返すことで、プロジェクトが数え切れないほどの技術的負債を積み上げてしまうことになるというパターンです。もし開発者がサイクルの終わりに CL を提出し、表面的なレビューだけで「CL を取り込まなければならない」ということが日常化しているのであれば、チームは開発プロセスを見直すことで、大きな機能変更がサイクルの早い時期に起こるように調整し、よいレビューができるだけの十分な時間を確保するように軌道修正しなければなりません。
