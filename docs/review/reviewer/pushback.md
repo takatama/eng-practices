@@ -6,25 +6,13 @@
 
 ## 誰が正しいのか？ {#who_is_right}
 
-When a developer disagrees with your suggestion, first take a moment to consider
-if they are correct. Often, they are closer to the code than you are, and so
-they might really have a better insight about certain aspects of it. Does their
-argument make sense? Does it make sense from a code health perspective? If so,
-let them know that they are right and let the issue drop.
+開発者があなたの提案に同意しなかったときには、初めに少し立ち止まって、開発者の意見が正しいのではないかとよく考えてください。多くの場合、レビュアのあなたよりも開発者の方がコードに親しんでいるため、コードの特定の側面についてより良い考えを本当に持っているのかもしれません。開発者の意見は意味のあるものとなっているでしょうか？ それは、コードの健康状態という観点からも意味がありますか？ もしそうならば、あなたの意見は正しかったので問題はなくなった、と開発者に伝えましょう。
 
-However, developers are not always right. In this case the reviewer should
-further explain why they believe that their suggestion is correct. A good
-explanation demonstrates both an understanding of the developer's reply, and
-additional information about why the change is being requested.
+しかし、開発者が常に正しいとは限りません。その場合、レビュアは、なぜ提案が正しいと信じているのかという理由を、さらに詳しく説明しなければなりません。よい説明というのは、開発者の返信に対する理解を示す言葉と、その変更が必要な理由についての追加情報の両方を含んだものです。
 
-In particular, when the reviewer believes their suggestion will improve code
-health, they should continue to advocate for the change, if they believe the
-resulting code quality improvement justifies the additional work requested.
-**Improving code health tends to happen in small steps.**
+特に、レビュアがその提案によってコードの健康状態を改善できると信じている場合、もしコードの質の改善のために追加の作業を必要とすることを正当化できると信じるならば、レビュアはその変更を主張し続けなければなりません。**コードの健康状態の改善は、小さな一歩から起こるものです。**
 
-Sometimes it takes a few rounds of explaining a suggestion before it really
-sinks in. Just make sure to always stay [polite](comments.md#courtesy) and let
-the developer know that you *hear* what they're saying, you just don't *agree*.
+本当に開発者の腑に落ちるまでには、数往復をかけて提案を説明しなければならないこともあります。常に[丁寧に](comments.md#courtesy)話し続けることを忘れないでください。そして、単に相手に**同意する**のではなく、あなたがちゃんと開発者が言っていることに耳を傾けて**理解しようとしている**ことが伝わるように心がけてください。
 
 ## 怒った開発者 {#upsetting_developers}
 
