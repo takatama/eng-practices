@@ -1,26 +1,16 @@
 # 緊急事態
 
-Sometimes there are emergency CLs that must pass through the entire code review
-process as quickly as
-possible.
+すべてのコードレビューをできるだけ速く行わなければならない、緊急事態の CL というものが存在します。
 
 
 
 ## 緊急事態とはどのような時か？ {#what}
 
-An emergency CL would be a **small** change that: allows a major launch to
-continue instead of rolling back, fixes a bug significantly affecting users in
-production, handles a pressing legal issue, closes a major security hole, etc.
+緊急事態の CL とは、本番環境上でユーザーに非常に大きな影響を与えるバグを修正したり、差し迫った法律上の問題を処理したり、主要なセキュリティホールを修正したりするなど、ロールバックではなく、連続して適用する必要がある変更**小さな**変更のことです。
 
-In emergencies we really do care about the speed of the entire code review
-process, not just the [speed of response](reviewer/speed.md). In this case
-*only*, the reviewer should care more about the speed of the review and the
-correctness of the code (does it actually resolve the emergency?) than anything
-else. Also (perhaps obviously) such reviews should take priority over all other
-code reviews, when they come up.
+緊急事態では、私たちは[レスポンスのスピード](reviewer/speed.md)だけではなく、コードレビュープロセス全体のスピードについて極めて慎重になります。レビュアは、レビューの速さと、他の何よりもコードの正しさ (この CL が実際に緊急事態を解決するものとなっているのか？) について注意深く確認しなければなりません。また、(おそらく自明ですが) 緊急事態のレビューは、他のすべてのコードレビューに優先して、CL が送られてきたタイミングで行わなければなりません。
 
-However, after the emergency is resolved you should look over the emergency CLs
-again and give them a [more thorough review](reviewer/looking-for.md).
+しかし、緊急事態が解消された後には、緊急事態の CL 全体をもう一度見直し、[より完全なレビュー](reviewer/looking-for.md)を行わなければなりません。
 
 ## 緊急事態でないのはどのような時か？ {#not}
 
