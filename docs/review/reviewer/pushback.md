@@ -14,16 +14,9 @@
 
 本当に開発者の腑に落ちるまでには、数往復をかけて提案を説明しなければならないこともあります。常に[丁寧に](comments.md#courtesy)話し続けることを忘れないでください。そして、単に相手に**同意する**のではなく、あなたがちゃんと開発者が言っていることに耳を傾けて**理解しようとしている**ことが伝わるように心がけてください。
 
-## 怒った開発者 {#upsetting_developers}
+## 開発者を怒らせる {#upsetting_developers}
 
-Reviewers sometimes believe that the developer will be upset if the reviewer
-insists on an improvement. Sometimes developers do become upset, but it is
-usually brief and they become very thankful later that you helped them improve
-the quality of their code. Usually, if you are [礼儀正しく](comments.md#courtesy) in
-your comments, developers actually don't become upset at all, and the worry is
-just in the reviewer's mind. Upsets are usually more about
-[コメントの書かれ方](comments.md#courtesy) than about the reviewer's
-insistence on code quality.
+レビュアはときに、もし今コードの改善を主張したら開発者は腹を立ててしまうに違いない、と感じることがあります。開発者が本当に怒ってしまうこともありますが、普通は腹を立てるのは短い間であり、最終的には、開発者はコードの質を改善する助けをしてくれたことをとても感謝するようになります。多くの場合、あなたが[礼儀正しく](comments.md#courtesy)コメントを書いている限り、開発者が実際には腹を立てることは全くなく、心配はレビュアの心の中で起こるだけです。開発者が怒ってしまう場合のほとんどは、コードの質についてのレビュアの主張ではなく、レビュアの[コメントの書き方](comments.md#courtesy)が原因となっています。
 
 ## 後できれいにする {#later}
 
