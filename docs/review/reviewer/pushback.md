@@ -26,16 +26,9 @@
 
 ## 厳密さに関する一般的な不満 {#strictness}
 
-If you previously had fairly lax code reviews and you switch to having strict
-reviews, some developers will complain very loudly. Improving the
-[スピード](speed.md) of your code reviews usually causes these complaints to fade
-away.
+もしあなたが以前、規律の緩いコードレビューを行っていて、その後、厳しいレビューに切り替えたとすると、非常に大きな不満の声を上げる開発者が現れることがあります。しかし、あなたのコードレビューの[スピード](speed.md)を上げれば、多くの場合、こうした不満はだんだん解消されていきます。
 
-Sometimes it can take months for these complaints to fade away, but eventually
-developers tend to see the value of strict code reviews as they see what great
-code they help generate. Sometimes the loudest protesters even become your
-strongest supporters once something happens that causes them to really see the
-value you're adding by being strict.
+このような不満の声が無くなるまでに数ヶ月もかかる場合もありますが、最終的には、優れたコードを生み出す助けとなることを理解するにつれ、開発者は厳しいコードレビューの価値を理解するようになります。時には最も激しく抵抗していた開発者でさえ、あなたが加えた厳しさの価値を本当に理解したときには、最も強い支援者になることがあります。
 
 ## 対立を解消する {#conflicts}
 
