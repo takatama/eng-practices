@@ -20,26 +20,9 @@
 
 ## 後できれいにする {#later}
 
-A common source of push back is that developers (understandably) want to get
-things done. They don't want to go through another round of review just to get
-this CL in. So they say they will clean something up in a later CL, and thus you
-should LGTM *this* CL now. Some developers are very good about this, and will
-immediately write a follow-up CL that fixes the issue. However, experience shows
-that as more time passes after a developer writes the original CL, the less
-likely this clean up is to happen. In fact, usually unless the developer does
-the clean up *immediately* after the present CL, it never happens. This isn't
-because developers are irresponsible, but because they have a lot of work to do
-and the cleanup gets lost or forgotten in the press of other work. Thus, it is
-usually best to insist that the developer clean up their CL *now*, before the
-code is in the codebase and "done." Letting people "clean things up later" is a
-common way for codebases to degenerate.
+反対が起こる主な理由は、(気持ちは理解できることですが) 開発者が作業を完了させたいと望んでいるからです。現在の CL を取り込むためだけに追加のレビューのやり取りをしたくはないのです。そのため、後で別の CL でクリーンアップをするから、**この** CL は今の状態で LGTM するべきだと言います。この時言ったことを非常によく守り、問題を修正するフォローアップの CL をすぐに書く開発者もいます。しかし、経験が示しているのは、開発者が元の CL を書いた後、時間が経てば経つほどクリーンアップの CL を提出する可能性も低くなってしまうという事実です。実際には、開発者が現在の CL の**直後に**クリーンアップを行わない場合、 クリーンアップの CL が提出されることはほとんどありません。しかしこれは、開発者が無責任だからというわけではなく、開発者にはやらなければならない仕事がたくさんあり、他の作業のプレッシャーに押されるうちに、クリーンアップの作業を見失ったり忘れたりしてしまうためなのです。だからこそ、ほとんどの場合、コードをコードベースに取り込み、作業が「完了した」とする前に、**今すぐ** CL をクリーンアップするように主張するのが最善なのです。
 
-If a CL introduces new complexity, it must be cleaned up before submission
-unless it is an [緊急事態](../emergencies.md). If the CL exposes surrounding
-problems and they can't be addressed right now, the developer should file a bug
-for the cleanup and assign it to themselves so that it doesn't get lost. They
-can optionally also write a TODO comment in the code that references the filed
-bug.
+もし CL が新しい複雑さをコードにもたらすものである場合は、[緊急事態](../emergencies.md)でない限り、提出する前に必ずコードをクリーンアップしなければなりません。もしその CL が関連する問題を表に出すものであり、今すぐには対処できない場合には、開発者はそのクリーンアップに対してバグをファイルし、そのバグを自分自身にアサインしてください。これにより、問題が忘れられる恐れがなくなります。オプションとして、ファイルしたバグを参照する TODO コメントをコード中に書いてもよいでしょう。
 
 ## 厳密さに関する一般的な不満 {#strictness}
 
