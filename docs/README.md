@@ -7,7 +7,7 @@ Google には、あらゆる言語・あらゆるプロジェクトをカバー�
 現在、以下のドキュメントが公開されています。
 
 *   [Google コードレビューガイドライン (Google's Code Review Guidelines)](review/index.md)。このガイドラインは2つのガイドラインからなります。
-    *   [コードレビュアのためのガイド (The Code Reviewer's Guide)](review/reviewer/index.md) (翻訳中)
+    *   [コードレビュアのためのガイド (The Code Reviewer's Guide)](review/reviewer/index.md)
     *   [変更の作者のためのガイド (The Change Author's Guide)](review/developer/index.md)
 
 ## 用語
